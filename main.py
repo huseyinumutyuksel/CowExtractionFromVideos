@@ -8,7 +8,17 @@ import config.settings as settings
 from src.scanner import VideoScanner
 import glob
 
+import shutil
+
 def main():
+    # --- Cleanup Output Directory ---
+    if os.path.exists(settings.OUTPUT_VIDEOS_DIR):
+        print(f"Cleaning previous output: {settings.OUTPUT_VIDEOS_DIR}")
+        try:
+            shutil.rmtree(settings.OUTPUT_VIDEOS_DIR)
+        except OSError as e:
+            print(f"Error cleaning output directory: {e}")
+            
     # Ensure input directory exists or warn
     if not os.path.exists(settings.INPUT_VIDEOS_DIR):
         print(f"WARNING: Input directory '{settings.INPUT_VIDEOS_DIR}' does not exist.")
