@@ -22,6 +22,10 @@ class CowExtractionProcessor(IVideoProcessor):
         if fps <= 0 or np.isnan(fps):
             print(f"Warning: Invalid FPS {fps}, defaulting to 30.0")
             fps = 30.0
+        else:
+            # Round FPS to nearest integer to prevent ffmpeg timebase errors with weird floats
+            # E.g. 240.37... -> 240
+            fps = round(fps)
 
         # Reset active writers for this new video
         self.writer_manager.reset_track_mapping()
@@ -54,12 +58,32 @@ class CowExtractionProcessor(IVideoProcessor):
                         if cow_crop.size == 0:
                             continue
 
-                        # Standardize resolution
+                        # Standardize resolution with PADDING (Letterboxing) to prevent distortion
                         target_w, target_h = settings.OUTPUT_RESOLUTION
                         h, w = cow_crop.shape[:2]
                         
-                        if (w, h) != (target_w, target_h):
-                            cow_crop = cv2.resize(cow_crop, (target_w, target_h))
+                        # Create black canvas
+                        canvas = np.zeros((target_h, target_w, 3), dtype=np.uint8)
+                        
+                        # Scaling logic: Only scale DOWN if crop is larger than target
+                        # Otherwise keep original size to avoid "zoom"
+                        scale = 1.0
+                        if w > target_w or h > target_h:
+                            scale = min(target_w / w, target_h / h)
+                            new_w = int(w * scale)
+                            new_h = int(h * scale)
+                            cow_crop = cv2.resize(cow_crop, (new_w, new_h))
+                            h, w = new_h, new_w # Update dims after resize
+                        
+                        # Calculate centering position
+                        x_offset = (target_w - w) // 2
+                        y_offset = (target_h - h) // 2
+                        
+                        # Place crop on canvas
+                        canvas[y_offset:y_offset+h, x_offset:x_offset+w] = cow_crop
+                        
+                        # Use canvas as the frame to write
+                        cow_crop = canvas
                         
                         self.writer_manager.write_frame(track_id, cow_crop, fps)
 
