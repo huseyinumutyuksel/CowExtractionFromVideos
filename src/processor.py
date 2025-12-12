@@ -3,12 +3,14 @@ import glob
 import os
 import numpy as np
 from src.interfaces import IDetector, IWriterManager, IVideoProcessor
+from src.smoother import BoxSmoother
 import config.settings as settings
 
 class CowExtractionProcessor(IVideoProcessor):
     def __init__(self, detector: IDetector, writer_manager: IWriterManager):
         self.detector = detector
         self.writer_manager = writer_manager
+        self.smoother = BoxSmoother()
 
     def process_video(self, video_path: str):
         print(f"Processing video: {video_path}")
@@ -27,8 +29,9 @@ class CowExtractionProcessor(IVideoProcessor):
             # E.g. 240.37... -> 240
             fps = round(fps)
 
-        # Reset active writers for this new video
+        # Reset active writers and smoother for this new video
         self.writer_manager.reset_track_mapping()
+        self.smoother.reset()
 
         while True:
             ret, frame = cap.read()
@@ -45,6 +48,9 @@ class CowExtractionProcessor(IVideoProcessor):
                     ids = res.boxes.id.cpu().numpy().astype(int)
                     
                     for box, track_id in zip(boxes, ids):
+                        # Apply smoothing to the box
+                        box = self.smoother.update(track_id, box)
+                        
                         x1, y1, x2, y2 = box
                         
                         # Ensure coordinates are within frame
@@ -90,13 +96,21 @@ class CowExtractionProcessor(IVideoProcessor):
         cap.release()
         self.writer_manager.close_all()
 
-    def process_all_videos(self):
+    def process_all_videos(self, skip_list=None):
+        if skip_list is None:
+            skip_list = []
+            
         search_pattern = os.path.join(settings.INPUT_VIDEOS_DIR, f"*{settings.VIDEO_EXT}")
         video_files = glob.glob(search_pattern)
         
         print(f"Found {len(video_files)} videos in {settings.INPUT_VIDEOS_DIR}")
         
         for video_file in video_files:
+            # Check if video should be skipped
+            if video_file in skip_list:
+                print(f"Skipping single-cow video: {os.path.basename(video_file)}")
+                continue
+                
             self.process_video(video_file)
 
         print("Processing complete.")

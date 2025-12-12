@@ -10,6 +10,10 @@ INPUT_VIDEOS_DIR = os.path.join(BASE_DIR, 'C:\\Users\\Umut\\Desktop\\cow_videos'
 # Output settings
 # Extracted cow videos will be saved here
 OUTPUT_VIDEOS_DIR = os.path.join(BASE_DIR, 'C:\\Users\\Umut\\Desktop\\cow_single_videos')
+SINGLE_COW_VIDEOS_DIR = os.path.join(BASE_DIR, 'C:\\Users\\Umut\\Desktop\\raw_single_cow_videos')
+
+# Smoothing settings
+SMOOTHING_ALPHA = 0.2  # Lower = smoother but more lag (0.0 to 1.0)
 
 # Model settings
 # YOLO model to use (yolov8n.pt, yolov8s.pt, etc. will be downloaded automatically if not present)
