@@ -24,7 +24,7 @@ YOLO_MODEL_NAME = 'yolov8m-seg.pt'
 BORDER_MARGIN = 5
 CONFIDENCE_THRESHOLD = 0.75
 TARGET_CLASS_ID = 19  # COCO class id for 'cow' is 19. Change if using a custom model.
-BACKGROUND_COLOR = (0, 255, 0)  # Green background for chroma keying
+BACKGROUND_COLOR = (0, 0, 0)  # Black background to minimize distortion visibility
 
 # File extension for input and output
 VIDEO_EXT = '.mp4'
