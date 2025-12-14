@@ -47,7 +47,23 @@ class CowExtractionProcessor(IVideoProcessor):
                     boxes = res.boxes.xyxy.cpu().numpy().astype(int)
                     ids = res.boxes.id.cpu().numpy().astype(int)
                     
-                    for box, track_id in zip(boxes, ids):
+                    # Get masks if available
+                    segments = None
+                    if res.masks is not None:
+                        segments = res.masks.xy
+
+                    for i, (box, track_id) in enumerate(zip(boxes, ids)):
+                        # -------------------------
+                        # 1. Partial Cow Filter
+                        # -------------------------
+                        raw_x1, raw_y1, raw_x2, raw_y2 = box
+                        img_h, img_w = frame.shape[:2]
+                        margin = settings.BORDER_MARGIN
+
+                        # Check if box touches border (using raw detection to be safe)
+                        if (raw_x1 <= margin) or (raw_y1 <= margin) or (raw_x2 >= img_w - margin) or (raw_y2 >= img_h - margin):
+                            continue
+
                         # Apply smoothing to the box
                         box = self.smoother.update(track_id, box)
                         
@@ -58,8 +74,27 @@ class CowExtractionProcessor(IVideoProcessor):
                         y1 = max(0, y1)
                         x2 = min(frame.shape[1], x2)
                         y2 = min(frame.shape[0], y2)
+
+                        # -------------------------
+                        # 2. Background Removal
+                        # -------------------------
+                        # Default to original frame
+                        source_frame = frame
                         
-                        cow_crop = frame[y1:y2, x1:x2]
+                        # Apply mask if available
+                        if segments is not None and len(segments) > i:
+                            seg = segments[i]
+                            if seg is not None and len(seg) > 0:
+                                # Create a black mask of the same size as the frame
+                                mask = np.zeros((img_h, img_w), dtype=np.uint8)
+                                # Fill the polygon (segment) with white (255)
+                                cv2.fillPoly(mask, [seg.astype(np.int32)], 255)
+                                
+                                # Apply the mask to the frame (bitwise AND)
+                                # Everything outside the mask becomes black
+                                source_frame = cv2.bitwise_and(frame, frame, mask=mask)
+                        
+                        cow_crop = source_frame[y1:y2, x1:x2]
                         
                         if cow_crop.size == 0:
                             continue

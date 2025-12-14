@@ -18,9 +18,10 @@ SMOOTHING_ALPHA = 0.2  # Lower = smoother but more lag (0.0 to 1.0)
 # Model settings
 # YOLO model to use (yolov8n.pt, yolov8s.pt, etc. will be downloaded automatically if not present)
 #YOLO_MODEL_NAME = 'yolov8n.pt'
-YOLO_MODEL_NAME = 'yolov8m.pt'
+YOLO_MODEL_NAME = 'yolov8m-seg.pt'
 
 # Processing settings
+BORDER_MARGIN = 5
 CONFIDENCE_THRESHOLD = 0.75
 TARGET_CLASS_ID = 19  # COCO class id for 'cow' is 19. Change if using a custom model.
 
