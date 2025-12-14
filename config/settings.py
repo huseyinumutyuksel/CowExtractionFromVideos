@@ -26,12 +26,18 @@ CONFIDENCE_THRESHOLD = 0.75
 TARGET_CLASS_ID = 19  # COCO class id for 'cow' is 19. Change if using a custom model.
 BACKGROUND_COLOR = (0, 0, 0)  # Black background to minimize distortion visibility
 
+# Masking settings
+MASK_METHOD = 'soft'  # Options: 'binary', 'soft'
+MASK_BLUR_KERNEL_SIZE = (15, 15)  # Kernel size for Gaussian blur (must be odd numbers)
+MASK_DILATION_ITERATIONS = 2      # Number of iterations to dilate the mask before blurring
+
 # File extension for input and output
 VIDEO_EXT = '.mp4'
 
 # Output configurations
 OUTPUT_RESOLUTION = (640, 640)  # Width, Height
 MIN_TRACK_DURATION_SEC = 4.0
+CROP_PADDING = 30  # Extra pixels around the detection box to prevent clipping (e.g. hooves, tails)
 
 # Create output directory if it doesn't exist
 os.makedirs(OUTPUT_VIDEOS_DIR, exist_ok=True)

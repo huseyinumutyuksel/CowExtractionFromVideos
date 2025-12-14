@@ -73,6 +73,13 @@ class CowExtractionProcessor(IVideoProcessor):
                         
                         x1, y1, x2, y2 = box
                         
+                        # Apply padding to ensure we don't cut off edges (hooves, tails)
+                        padding = getattr(settings, 'CROP_PADDING', 0)
+                        x1 -= padding
+                        y1 -= padding
+                        x2 += padding
+                        y2 += padding
+                        
                         # Ensure coordinates are within frame
                         x1 = max(0, x1)
                         y1 = max(0, y1)
@@ -89,19 +96,7 @@ class CowExtractionProcessor(IVideoProcessor):
                         if segments is not None and len(segments) > i:
                             seg = segments[i]
                             if seg is not None and len(seg) > 0:
-                                # Create a mask of the same size as the frame
-                                mask = np.zeros((img_h, img_w), dtype=np.uint8)
-                                # Fill the polygon (segment) with white (1)
-                                cv2.fillPoly(mask, [seg.astype(np.int32)], 1)
-                                
-                                # Create colored background (Green)
-                                bg_color = settings.BACKGROUND_COLOR 
-                                background = np.full(frame.shape, bg_color, dtype=np.uint8)
-                                
-                                # Combine: where mask is 1, use frame; else use background
-                                # mask needs 3 channels for multiplication or use where
-                                mask_bool = mask.astype(bool)
-                                source_frame = np.where(mask_bool[..., None], frame, background)
+                                source_frame = self._apply_mask(frame, seg)
                         
                         cow_crop = source_frame[y1:y2, x1:x2]
                         
@@ -158,3 +153,63 @@ class CowExtractionProcessor(IVideoProcessor):
             self.process_video(video_file)
 
         print("Processing complete.")
+
+    def _apply_mask(self, frame: np.ndarray, segment: np.ndarray) -> np.ndarray:
+        """
+        Applies background masking based on the configured method.
+        """
+        img_h, img_w = frame.shape[:2]
+        method = getattr(settings, 'MASK_METHOD', 'soft')
+        
+        if method == 'binary':
+            return self._apply_binary_mask(frame, segment, img_h, img_w)
+        elif method == 'soft':
+            return self._apply_soft_mask(frame, segment, img_h, img_w)
+        else:
+            print(f"Warning: Unknown mask method '{method}'. Defaulting to soft mask.")
+            return self._apply_soft_mask(frame, segment, img_h, img_w)
+
+    def _apply_binary_mask(self, frame: np.ndarray, segment: np.ndarray, h: int, w: int) -> np.ndarray:
+        """
+        Original hard-cut masking.
+        """
+        mask = np.zeros((h, w), dtype=np.uint8)
+        cv2.fillPoly(mask, [segment.astype(np.int32)], 1)
+        
+        bg_color = settings.BACKGROUND_COLOR 
+        background = np.full(frame.shape, bg_color, dtype=np.uint8)
+        
+        mask_bool = mask.astype(bool)
+        return np.where(mask_bool[..., None], frame, background)
+
+    def _apply_soft_mask(self, frame: np.ndarray, segment: np.ndarray, h: int, w: int) -> np.ndarray:
+        """
+        Soft masking with dilation and Gaussian blur for smoother edges.
+        """
+        # 1. Create base binary mask
+        mask = np.zeros((h, w), dtype=np.uint8)
+        cv2.fillPoly(mask, [segment.astype(np.int32)], 255) # Use 0-255 range
+
+        # 2. Dilate to include potential edge pixels
+        kernel = np.ones((3, 3), np.uint8)
+        iterations = getattr(settings, 'MASK_DILATION_ITERATIONS', 2)
+        mask = cv2.dilate(mask, kernel, iterations=iterations)
+
+        # 3. Gaussian Blur for soft alpha
+        blur_size = getattr(settings, 'MASK_BLUR_KERNEL_SIZE', (15, 15))
+        mask_blurred = cv2.GaussianBlur(mask, blur_size, 0)
+        
+        # 4. Normalize alpha to 0.0 - 1.0
+        alpha = mask_blurred.astype(float) / 255.0
+        alpha = np.expand_dims(alpha, axis=-1) # (H,W,1)
+
+        # 5. Blend
+        bg_color = settings.BACKGROUND_COLOR 
+        background = np.full(frame.shape, bg_color, dtype=np.uint8)
+        
+        # Formula: Result = Foreground * Alpha + Background * (1 - Alpha)
+        foreground = frame.astype(float)
+        background = background.astype(float)
+        
+        out = (foreground * alpha + background * (1.0 - alpha))
+        return out.astype(np.uint8)
