@@ -42,3 +42,10 @@ class IWriterManager(ABC):
         Closes all open video writers.
         """
         pass
+
+    @abstractmethod
+    def reset_track_mapping(self, source_stem: str = None):
+        """
+        Call this between source videos.
+        """
+        pass

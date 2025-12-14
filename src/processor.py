@@ -30,13 +30,17 @@ class CowExtractionProcessor(IVideoProcessor):
             fps = round(fps)
 
         # Reset active writers and smoother for this new video
-        self.writer_manager.reset_track_mapping()
+        video_stem = os.path.splitext(os.path.basename(video_path))[0]
+        self.writer_manager.reset_track_mapping(video_stem)
         self.smoother.reset()
 
         while True:
             ret, frame = cap.read()
             if not ret:
                 break
+            
+            # Use fixed resolution for consistent processing if needed, 
+            # currently just processing whatever resolution the video is.
 
             results = self.detector.detect_and_track(frame)
             
@@ -85,14 +89,19 @@ class CowExtractionProcessor(IVideoProcessor):
                         if segments is not None and len(segments) > i:
                             seg = segments[i]
                             if seg is not None and len(seg) > 0:
-                                # Create a black mask of the same size as the frame
+                                # Create a mask of the same size as the frame
                                 mask = np.zeros((img_h, img_w), dtype=np.uint8)
-                                # Fill the polygon (segment) with white (255)
-                                cv2.fillPoly(mask, [seg.astype(np.int32)], 255)
+                                # Fill the polygon (segment) with white (1)
+                                cv2.fillPoly(mask, [seg.astype(np.int32)], 1)
                                 
-                                # Apply the mask to the frame (bitwise AND)
-                                # Everything outside the mask becomes black
-                                source_frame = cv2.bitwise_and(frame, frame, mask=mask)
+                                # Create colored background (Green)
+                                bg_color = settings.BACKGROUND_COLOR 
+                                background = np.full(frame.shape, bg_color, dtype=np.uint8)
+                                
+                                # Combine: where mask is 1, use frame; else use background
+                                # mask needs 3 channels for multiplication or use where
+                                mask_bool = mask.astype(bool)
+                                source_frame = np.where(mask_bool[..., None], frame, background)
                         
                         cow_crop = source_frame[y1:y2, x1:x2]
                         

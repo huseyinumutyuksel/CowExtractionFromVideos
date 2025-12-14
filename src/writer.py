@@ -16,6 +16,7 @@ class CowVideoWriterManager(IWriterManager):
     def __init__(self, output_dir: str):
         self.output_dir = output_dir
         self.global_cow_counter = 0 
+        self.current_source_stem = "unknown"
         # Using a dictionary to store info about active tracks
         # track_id -> TrackInfo
         self.current_video_writers = {} 
@@ -25,15 +26,15 @@ class CowVideoWriterManager(IWriterManager):
     
     def get_next_filename(self) -> str:
         self.global_cow_counter += 1
-        filename = f"cow_{self.global_cow_counter:04d}{settings.VIDEO_EXT}"
+        # New format: {source_stem}_cow_{counter}.mp4
+        filename = f"{self.current_source_stem}_cow_{self.global_cow_counter:04d}{settings.VIDEO_EXT}"
         return os.path.join(self.output_dir, filename)
 
     def write_frame(self, track_id: int, frame: np.ndarray, fps: float):
         height, width = frame.shape[:2]
         
         if track_id not in self.current_video_writers:
-            # Create new writer with temp name in output dir to ensure same filesystem for easy move
-            # temp_{track_id}_{random}.mp4
+            # Create new writer with temp name in output dir
             temp_filename = f"temp_{track_id}_{os.urandom(4).hex()}{settings.VIDEO_EXT}"
             output_path = os.path.join(self.output_dir, temp_filename)
             
@@ -52,11 +53,6 @@ class CowVideoWriterManager(IWriterManager):
 
     def close_all(self):
         # Iterate over all current writers
-        # Release them
-        # Check duration
-        # Rename or Delete
-        
-        # We need to collect keys first to avoid modification issues if any (though we are clearing at end)
         for trk_id, track_info in self.current_video_writers.items():
             track_info.writer.release()
             
@@ -66,7 +62,7 @@ class CowVideoWriterManager(IWriterManager):
                 # Sufficient duration, finalize the file
                 final_path = self.get_next_filename()
                 
-                # If file exists, remove it (overwrite logic for sequential purity in this session)
+                # If file exists, remove it (overwrite logic)
                 if os.path.exists(final_path):
                     try:
                         os.remove(final_path)
@@ -75,20 +71,22 @@ class CowVideoWriterManager(IWriterManager):
                 
                 try:
                     shutil.move(track_info.temp_path, final_path)
-                    # print(f"Saved cow track {trk_id} ({duration:.2f}s) -> {os.path.basename(final_path)}")
                 except OSError as e:
                     print(f"Error renaming temp file {track_info.temp_path}: {e}")
             else:
                 # Too short, discard
-                # print(f"Discarded cow track {trk_id} ({duration:.2f}s < {settings.MIN_TRACK_DURATION_SEC}s)")
                 if os.path.exists(track_info.temp_path):
                     try:
                         os.remove(track_info.temp_path)
                     except OSError:
                         pass
-
+        
         self.current_video_writers.clear()
 
-    def reset_track_mapping(self):
+    def reset_track_mapping(self, source_stem: str = None):
         """Call this between source videos."""
         self.close_all()
+        if source_stem:
+            self.current_source_stem = source_stem
+        # Reset counter per source video
+        self.global_cow_counter = 0
