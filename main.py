@@ -1,4 +1,3 @@
-import sys
 import os
 from src.detector import YoloCowDetector
 from src.writer import CowVideoWriterManager
