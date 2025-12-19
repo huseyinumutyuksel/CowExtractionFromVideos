@@ -10,14 +10,47 @@ import glob
 import shutil
 
 def main():
+    # --- CHECK EXISTING OUTPUT ---
+    processed_stems = set()
+    should_delete = False
+    
+    if os.path.exists(settings.OUTPUT_VIDEOS_DIR) and len(os.listdir(settings.OUTPUT_VIDEOS_DIR)) > 0:
+        print(f"Found existing output in: {settings.OUTPUT_VIDEOS_DIR}")
+        while True:
+            choice = input("Delete existing output and start over? (y/n): ").strip().lower()
+            if choice in ['y', 'yes']:
+                should_delete = True
+                break
+            elif choice in ['n', 'no']:
+                should_delete = False
+                break
+    
     # --- Cleanup Output Directory ---
-    if os.path.exists(settings.OUTPUT_VIDEOS_DIR):
-        print(f"Cleaning previous output: {settings.OUTPUT_VIDEOS_DIR}")
-        try:
-            shutil.rmtree(settings.OUTPUT_VIDEOS_DIR)
-        except OSError as e:
-            print(f"Error cleaning output directory: {e}")
-            
+    if should_delete:
+        if os.path.exists(settings.OUTPUT_VIDEOS_DIR):
+            print(f"Cleaning previous output: {settings.OUTPUT_VIDEOS_DIR}")
+            try:
+                shutil.rmtree(settings.OUTPUT_VIDEOS_DIR)
+                # Re-create immediately because other parts assume it exists
+                os.makedirs(settings.OUTPUT_VIDEOS_DIR, exist_ok=True)
+            except OSError as e:
+                print(f"Error cleaning output directory: {e}")
+    else:
+        # Resume mode: find what's already done
+        if os.path.exists(settings.OUTPUT_VIDEOS_DIR):
+            print("Scanning existing output to resume...")
+            existing_files = os.listdir(settings.OUTPUT_VIDEOS_DIR)
+            for f in existing_files:
+                if f.endswith(settings.VIDEO_EXT):
+                    # Format: {source_stem}_cow_{counter}.mp4
+                    # We need to extract {source_stem}
+                    # Split by '_cow_' and take the first part
+                    parts = f.split('_cow_')
+                    if len(parts) > 1:
+                        source_stem = parts[0]
+                        processed_stems.add(source_stem)
+            print(f"Found {len(processed_stems)} already processed videos.")
+
     # Ensure input directory exists or warn
     if not os.path.exists(settings.INPUT_VIDEOS_DIR):
         print(f"WARNING: Input directory '{settings.INPUT_VIDEOS_DIR}' does not exist.")
@@ -37,9 +70,21 @@ def main():
     search_pattern = os.path.join(settings.INPUT_VIDEOS_DIR, f"*{settings.VIDEO_EXT}")
     all_videos = glob.glob(search_pattern)
     
-    # Identify and copy single-cow videos
-    print("Starting pre-scan for single-cow videos...")
-    single_cow_videos = scanner.scan_and_filter(all_videos)
+    # Filter videos to scan: only those NOT processed yet
+    # We need to map stems back to full paths for the scanner
+    videos_to_scan = []
+    processed_paths = []
+    
+    for video_path in all_videos:
+        stem = os.path.splitext(os.path.basename(video_path))[0]
+        if stem in processed_stems:
+            processed_paths.append(video_path)
+        else:
+            videos_to_scan.append(video_path)
+            
+    # Identify and copy single-cow videos (but don't skip them in processing anymore!)
+    print(f"Starting pre-scan for single-cow videos on {len(videos_to_scan)} videos...")
+    scanner.scan_and_filter(videos_to_scan)
     
     # --- STEP 2: Process the rest ---
     print("Initializing Writer Manager...")
@@ -48,8 +93,9 @@ def main():
     print("Initializing Processor...")
     processor = CowExtractionProcessor(detector, writer_manager)
     
-    # Run, skipping the single-cow videos found above
-    processor.process_all_videos(skip_list=single_cow_videos)
+    # Run, skipping ONLY the videos that were already fully processed in a previous run
+    # Single cow videos are NO LONGER skipped, they are processed.
+    processor.process_all_videos(skip_list=processed_paths)
 
 if __name__ == "__main__":
     main()
