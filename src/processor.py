@@ -1,10 +1,14 @@
 import cv2
 import glob
 import os
+import logging
 import numpy as np
+from tqdm import tqdm
 from src.interfaces import IDetector, IWriterManager, IVideoProcessor
 from src.smoother import BoxSmoother
 import config.settings as settings
+
+logger = logging.getLogger(__name__)
 
 class CowExtractionProcessor(IVideoProcessor):
     def __init__(self, detector: IDetector, writer_manager: IWriterManager):
@@ -13,26 +17,33 @@ class CowExtractionProcessor(IVideoProcessor):
         self.smoother = BoxSmoother()
 
     def process_video(self, video_path: str):
-        print(f"Processing video: {video_path}")
+        logger.info(f"Processing video: {os.path.basename(video_path)}")
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
-            print(f"Error opening video: {video_path}")
+            logger.error(f"Error opening video: {video_path}")
             return
 
         fps = cap.get(cv2.CAP_PROP_FPS)
         # Handle invalid FPS
         if fps <= 0 or np.isnan(fps):
-            print(f"Warning: Invalid FPS {fps}, defaulting to 30.0")
+            logger.warning(f"Invalid FPS {fps} in {os.path.basename(video_path)}, defaulting to 30.0")
             fps = 30.0
         else:
             # Round FPS to nearest integer to prevent ffmpeg timebase errors with weird floats
             # E.g. 240.37... -> 240
             fps = round(fps)
+            logger.debug(f"Video FPS: {fps}")
 
         # Reset active writers and smoother for this new video
         video_stem = os.path.splitext(os.path.basename(video_path))[0]
         self.writer_manager.reset_track_mapping(video_stem)
         self.smoother.reset()
+        
+        # Get total frame count for progress bar
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        
+        # Create progress bar for frame processing
+        pbar = tqdm(total=total_frames, desc=f"Processing {video_stem}", unit="frame", leave=False)
 
         while True:
             ret, frame = cap.read()
@@ -131,7 +142,10 @@ class CowExtractionProcessor(IVideoProcessor):
                         cow_crop = canvas
                         
                         self.writer_manager.write_frame(track_id, cow_crop, fps)
+            
+            pbar.update(1)
 
+        pbar.close()
         cap.release()
         self.writer_manager.close_all()
 
@@ -142,17 +156,23 @@ class CowExtractionProcessor(IVideoProcessor):
         search_pattern = os.path.join(settings.INPUT_VIDEOS_DIR, f"*{settings.VIDEO_EXT}")
         video_files = glob.glob(search_pattern)
         
-        print(f"Found {len(video_files)} videos in {settings.INPUT_VIDEOS_DIR}")
+        logger.info(f"Found {len(video_files)} videos in {settings.INPUT_VIDEOS_DIR}")
         
-        for video_file in video_files:
+        # Create progress bar for video-level progress
+        pbar = tqdm(video_files, desc="Processing videos", unit="video")
+        
+        for video_file in pbar:
             # Check if video should be skipped
             if video_file in skip_list:
-                print(f"Skipping single-cow video: {os.path.basename(video_file)}")
+                logger.info(f"Skipping already processed video: {os.path.basename(video_file)}")
                 continue
-                
+            
+            pbar.set_description(f"Processing {os.path.basename(video_file)[:30]}")
             self.process_video(video_file)
 
-        print("Processing complete.")
+        pbar.close()
+
+        logger.info("Processing complete.")
 
     def _apply_mask(self, frame: np.ndarray, segment: np.ndarray) -> np.ndarray:
         """

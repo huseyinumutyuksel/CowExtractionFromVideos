@@ -1,9 +1,12 @@
 import cv2
 import os
 import shutil
+import logging
 import numpy as np
 from src.interfaces import IWriterManager
 import config.settings as settings
+
+logger = logging.getLogger(__name__)
 
 class TrackInfo:
     def __init__(self, writer, temp_path, fps):
@@ -71,15 +74,17 @@ class CowVideoWriterManager(IWriterManager):
                 
                 try:
                     shutil.move(track_info.temp_path, final_path)
+                    logger.info(f"Saved cow video: {os.path.basename(final_path)} (duration: {duration:.2f}s)")
                 except OSError as e:
-                    print(f"Error renaming temp file {track_info.temp_path}: {e}")
+                    logger.error(f"Error renaming temp file {track_info.temp_path}: {e}")
             else:
                 # Too short, discard
+                logger.debug(f"Discarding track {trk_id} - too short ({duration:.2f}s)")
                 if os.path.exists(track_info.temp_path):
                     try:
                         os.remove(track_info.temp_path)
-                    except OSError:
-                        pass
+                    except OSError as e:
+                        logger.warning(f"Failed to remove temp file {track_info.temp_path}: {e}")
         
         self.current_video_writers.clear()
 
