@@ -9,7 +9,39 @@ import glob
 
 import shutil
 
+def select_background_color():
+    """
+    Asks the user to select a background color from a list of ML-friendly options.
+    Returns the selected color tuple (B, G, R).
+    """
+    colors = {
+        "1": ("Yesil (Makine Ogrenmesi icin Onerilen)", (0, 255, 0)),
+        "2": ("Siyah (Varsayilan)", (0, 0, 0)),
+        "3": ("Beyaz", (255, 255, 255)),
+        "4": ("Mavi (Chroma Key)", (255, 0, 0)),
+        "5": ("Magenta (Yuksek Kontrast)", (255, 0, 255))
+    }
+    
+    print("\n--- Arka Plan Rengi Secimi ---")
+    print("Lutfen videolardaki nesnelerin (ineklerin) daha iyi ayirt edilebilmesi icin bir arka plan rengi secin.")
+    for key, (name, _) in colors.items():
+        print(f"{key}. {name}")
+    
+    choice = input("Seciminiz (1-5) [Varsayilan: 2]: ").strip()
+    
+    if choice in colors:
+        selected_name, color_value = colors[choice]
+        print(f"Secilen Renk: {selected_name}")
+        return color_value
+    else:
+        print("Gecersiz secim veya bos birakildi. Varsayilan renk (Siyah) kullanilacak.")
+        return colors["2"][1]
+
 def main():
+    # --- Background Color Selection ---
+    # Update the settings with the user's choice before processing starts
+    settings.BACKGROUND_COLOR = select_background_color()
+
     # --- CHECK EXISTING OUTPUT ---
     processed_stems = set()
     should_delete = False
