@@ -1,9 +1,13 @@
 import cv2
 import os
 import shutil
+import logging
 from typing import List, Set
+from tqdm import tqdm
 from src.interfaces import IDetector
 import config.settings as settings
+
+logger = logging.getLogger(__name__)
 
 class VideoScanner:
     def __init__(self, detector: IDetector):
@@ -26,7 +30,7 @@ class VideoScanner:
         """
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
-            print(f"Error opening video for scanning: {video_path}")
+            logger.error(f"Error opening video for scanning: {video_path}")
             return False
 
         max_simultaneous_cows = 0
@@ -79,12 +83,16 @@ class VideoScanner:
         Scans videos. If single cow, copy to SINGLE_COW_VIDEOS_DIR and return as 'processed'.
         Returns a list of video paths that were identified as single-cow and processed.
         """
-        print(f"Scanning {len(video_files)} videos for single-cow filter...")
+        logger.info(f"Starting scan of {len(video_files)} videos for single-cow filter...")
         single_cow_videos = []
 
-        for video_path in video_files:
+        # Create progress bar for scanning
+        pbar = tqdm(video_files, desc="Scanning videos", unit="video")
+        
+        for video_path in pbar:
+            pbar.set_description(f"Scanning {os.path.basename(video_path)[:30]}")
             if self.is_single_cow_video(video_path):
-                print(f"  [Single Cow Found] {os.path.basename(video_path)}")
+                logger.info(f"Single cow video identified: {os.path.basename(video_path)}")
                 
                 # Copy original file to separate folder
                 filename = os.path.basename(video_path)
@@ -93,11 +101,12 @@ class VideoScanner:
                 try:
                     shutil.copy2(video_path, dest_path)
                     single_cow_videos.append(video_path)
+                    logger.debug(f"Copied to: {dest_path}")
                 except OSError as e:
-                    print(f"Failed to copy {video_path}: {e}")
+                    logger.error(f"Failed to copy {video_path}: {e}")
             else:
-                # print(f"  [Multi/No Cow] {os.path.basename(video_path)}")
-                pass
-                
-        print(f"Scanner finished. Found {len(single_cow_videos)} single-cow videos.")
+                logger.debug(f"Multi/No cow video: {os.path.basename(video_path)}")
+        
+        pbar.close()
+        logger.info(f"Scan complete. Found {len(single_cow_videos)} single-cow videos.")
         return single_cow_videos
