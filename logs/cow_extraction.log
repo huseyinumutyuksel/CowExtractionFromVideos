@@ -1,0 +1,1434 @@
+2025-12-27 23:49:03 - __main__ - INFO - ============================================================
+2025-12-27 23:49:03 - __main__ - INFO - Cow Extraction Project - Starting
+2025-12-27 23:49:03 - __main__ - INFO - ============================================================
+2025-12-27 23:49:03 - __main__ - DEBUG - Validating configuration...
+2025-12-27 23:49:03 - __main__ - DEBUG - Configuration validated successfully
+2025-12-27 23:49:03 - __main__ - INFO - Scanning existing output to resume...
+2025-12-27 23:49:03 - __main__ - INFO - Found 0 already processed videos.
+2025-12-27 23:49:03 - __main__ - WARNING - Input directory 'C:\Users\Umut\PycharmProjects\CowExtractionFromVideos\input_videos' does not exist.
+2025-12-27 23:49:03 - __main__ - INFO - Creating empty input directory...
+2025-12-27 23:49:03 - __main__ - INFO - Please add video files to the input directory and run again.
+2025-12-27 23:59:28 - __main__ - INFO - ============================================================
+2025-12-27 23:59:28 - __main__ - INFO - Cow Extraction Project - Starting
+2025-12-27 23:59:28 - __main__ - INFO - ============================================================
+2025-12-27 23:59:28 - __main__ - DEBUG - Validating configuration...
+2025-12-27 23:59:28 - __main__ - DEBUG - Configuration validated successfully
+2025-12-27 23:59:28 - __main__ - INFO - Scanning existing output to resume...
+2025-12-27 23:59:28 - __main__ - INFO - Found 0 already processed videos.
+2025-12-27 23:59:28 - __main__ - WARNING - Input directory 'C:\Users\Umut\PycharmProjects\CowExtractionFromVideos\input_videos' does not exist.
+2025-12-27 23:59:28 - __main__ - INFO - Creating empty input directory...
+2025-12-27 23:59:28 - __main__ - INFO - Please add video files to the input directory and run again.
+2025-12-28 00:19:18 - __main__ - INFO - ============================================================
+2025-12-28 00:19:18 - __main__ - INFO - Cow Extraction Project - Starting
+2025-12-28 00:19:18 - __main__ - INFO - ============================================================
+2025-12-28 00:19:18 - __main__ - DEBUG - Validating configuration...
+2025-12-28 00:19:18 - __main__ - DEBUG - Configuration validated successfully
+2025-12-28 00:19:18 - __main__ - INFO - Found existing output in: C:\Users\Umut\Desktop\cow_single_videos
+2025-12-28 00:19:25 - __main__ - INFO - Scanning existing output to resume...
+2025-12-28 00:19:25 - __main__ - INFO - Found 16 already processed videos.
+2025-12-28 00:19:25 - __main__ - INFO - Initializing YOLO detector...
+2025-12-28 00:19:25 - src.detector - INFO - Initializing YOLO detector with model: yolov8m-seg.pt
+2025-12-28 00:19:25 - src.detector - INFO - YOLO model loaded successfully
+2025-12-28 00:19:25 - src.detector - DEBUG - Target class ID: 19, Confidence threshold: 0.75
+2025-12-28 00:19:25 - __main__ - INFO - Initializing video scanner...
+2025-12-28 00:19:25 - __main__ - INFO - Found 105 total videos to process
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_001
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_002
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_003
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_004
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_005
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_006
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_007
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_008
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_009
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_010
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_011
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_012
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_013
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_014
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_015
+2025-12-28 00:19:25 - __main__ - DEBUG - Skipping already processed: VID_016
+2025-12-28 00:19:25 - __main__ - INFO - Starting pre-scan for single-cow videos on 89 videos...
+2025-12-28 00:19:25 - src.scanner - INFO - Starting scan of 89 videos for single-cow filter...
+2025-12-28 00:19:27 - src.scanner - DEBUG - Multi/No cow video: VID_017.mp4
+2025-12-28 00:19:46 - src.scanner - DEBUG - Multi/No cow video: VID_018.mp4
+2025-12-28 00:19:47 - src.scanner - DEBUG - Multi/No cow video: VID_019.mp4
+2025-12-28 00:19:49 - src.scanner - DEBUG - Multi/No cow video: VID_020.mp4
+2025-12-28 00:20:30 - src.scanner - DEBUG - Multi/No cow video: VID_021.mp4
+2025-12-28 00:21:00 - src.scanner - DEBUG - Multi/No cow video: VID_022.mp4
+2025-12-28 00:21:39 - src.scanner - DEBUG - Multi/No cow video: VID_023.mp4
+2025-12-28 00:21:39 - src.scanner - DEBUG - Multi/No cow video: VID_024.mp4
+2025-12-28 00:21:40 - src.scanner - DEBUG - Multi/No cow video: VID_025.mp4
+2025-12-28 00:21:40 - src.scanner - DEBUG - Multi/No cow video: VID_026.mp4
+2025-12-28 00:21:53 - src.scanner - DEBUG - Multi/No cow video: VID_027.mp4
+2025-12-28 00:21:54 - src.scanner - DEBUG - Multi/No cow video: VID_028.mp4
+2025-12-28 00:22:22 - src.scanner - DEBUG - Multi/No cow video: VID_029.mp4
+2025-12-28 00:22:32 - src.scanner - DEBUG - Multi/No cow video: VID_030.mp4
+2025-12-28 00:22:32 - src.scanner - DEBUG - Multi/No cow video: VID_031.mp4
+2025-12-28 00:22:45 - src.scanner - DEBUG - Multi/No cow video: VID_032.mp4
+2025-12-28 00:22:51 - src.scanner - DEBUG - Multi/No cow video: VID_033.mp4
+2025-12-28 00:22:53 - src.scanner - DEBUG - Multi/No cow video: VID_034.mp4
+2025-12-28 00:22:54 - src.scanner - DEBUG - Multi/No cow video: VID_035.mp4
+2025-12-28 00:23:03 - src.scanner - DEBUG - Multi/No cow video: VID_036.mp4
+2025-12-28 00:23:04 - src.scanner - DEBUG - Multi/No cow video: VID_037.mp4
+2025-12-28 00:23:07 - src.scanner - DEBUG - Multi/No cow video: VID_038.mp4
+2025-12-28 00:23:52 - src.scanner - DEBUG - Multi/No cow video: VID_039.mp4
+2025-12-28 00:23:54 - src.scanner - DEBUG - Multi/No cow video: VID_040.mp4
+2025-12-28 00:23:54 - src.scanner - DEBUG - Multi/No cow video: VID_041.mp4
+2025-12-28 00:23:55 - src.scanner - DEBUG - Multi/No cow video: VID_042.mp4
+2025-12-28 00:23:56 - src.scanner - DEBUG - Multi/No cow video: VID_043.mp4
+2025-12-28 00:23:57 - src.scanner - DEBUG - Multi/No cow video: VID_044.mp4
+2025-12-28 00:23:57 - src.scanner - DEBUG - Multi/No cow video: VID_045.mp4
+2025-12-28 00:23:58 - src.scanner - DEBUG - Multi/No cow video: VID_046.mp4
+2025-12-28 00:24:01 - src.scanner - DEBUG - Multi/No cow video: VID_047.mp4
+2025-12-28 00:24:15 - src.scanner - DEBUG - Multi/No cow video: VID_048.mp4
+2025-12-28 00:24:16 - src.scanner - DEBUG - Multi/No cow video: VID_049.mp4
+2025-12-28 00:24:17 - src.scanner - DEBUG - Multi/No cow video: VID_050.mp4
+2025-12-28 00:24:19 - src.scanner - DEBUG - Multi/No cow video: VID_051.mp4
+2025-12-28 00:24:19 - src.scanner - DEBUG - Multi/No cow video: VID_052.mp4
+2025-12-28 00:24:22 - src.scanner - DEBUG - Multi/No cow video: VID_053.mp4
+2025-12-28 00:24:23 - src.scanner - DEBUG - Multi/No cow video: VID_054.mp4
+2025-12-28 00:24:24 - src.scanner - DEBUG - Multi/No cow video: VID_055.mp4
+2025-12-28 00:24:25 - src.scanner - DEBUG - Multi/No cow video: VID_056.mp4
+2025-12-28 00:25:09 - src.scanner - INFO - Single cow video identified: VID_057.mp4
+2025-12-28 00:25:09 - src.scanner - DEBUG - Copied to: C:\Users\Umut\Desktop\raw_single_cow_videos\VID_057.mp4
+2025-12-28 00:25:34 - src.scanner - DEBUG - Multi/No cow video: VID_058.mp4
+2025-12-28 00:25:35 - src.scanner - DEBUG - Multi/No cow video: VID_059.mp4
+2025-12-28 00:25:37 - src.scanner - DEBUG - Multi/No cow video: VID_060.mp4
+2025-12-28 00:25:38 - src.scanner - DEBUG - Multi/No cow video: VID_061.mp4
+2025-12-28 00:25:56 - src.scanner - DEBUG - Multi/No cow video: VID_062.mp4
+2025-12-28 00:26:07 - src.scanner - DEBUG - Multi/No cow video: VID_063.mp4
+2025-12-28 00:26:07 - src.scanner - DEBUG - Multi/No cow video: VID_064.mp4
+2025-12-28 00:26:08 - src.scanner - DEBUG - Multi/No cow video: VID_065.mp4
+2025-12-28 00:26:09 - src.scanner - DEBUG - Multi/No cow video: VID_066.mp4
+2025-12-28 00:26:09 - src.scanner - DEBUG - Multi/No cow video: VID_067.mp4
+2025-12-28 00:26:10 - src.scanner - DEBUG - Multi/No cow video: VID_068.mp4
+2025-12-28 00:26:11 - src.scanner - DEBUG - Multi/No cow video: VID_069.mp4
+2025-12-28 00:26:20 - src.scanner - DEBUG - Multi/No cow video: VID_070.mp4
+2025-12-28 00:26:23 - src.scanner - DEBUG - Multi/No cow video: VID_071.mp4
+2025-12-28 00:26:28 - src.scanner - DEBUG - Multi/No cow video: VID_072.mp4
+2025-12-28 00:27:00 - src.scanner - DEBUG - Multi/No cow video: VID_073.mp4
+2025-12-28 00:27:00 - src.scanner - DEBUG - Multi/No cow video: VID_074.mp4
+2025-12-28 00:27:01 - src.scanner - DEBUG - Multi/No cow video: VID_075.mp4
+2025-12-28 00:27:01 - src.scanner - DEBUG - Multi/No cow video: VID_076.mp4
+2025-12-28 00:27:02 - src.scanner - DEBUG - Multi/No cow video: VID_077.mp4
+2025-12-28 00:27:08 - src.scanner - DEBUG - Multi/No cow video: VID_078.mp4
+2025-12-28 00:27:27 - src.scanner - DEBUG - Multi/No cow video: VID_079.mp4
+2025-12-28 00:27:37 - src.scanner - DEBUG - Multi/No cow video: VID_080.mp4
+2025-12-28 00:27:38 - src.scanner - DEBUG - Multi/No cow video: VID_081.mp4
+2025-12-28 00:27:39 - src.scanner - DEBUG - Multi/No cow video: VID_082.mp4
+2025-12-28 00:27:39 - src.scanner - DEBUG - Multi/No cow video: VID_083.mp4
+2025-12-28 00:27:40 - src.scanner - DEBUG - Multi/No cow video: VID_084.mp4
+2025-12-28 00:27:41 - src.scanner - DEBUG - Multi/No cow video: VID_085.mp4
+2025-12-28 00:27:41 - src.scanner - DEBUG - Multi/No cow video: VID_086.mp4
+2025-12-28 00:27:43 - src.scanner - DEBUG - Multi/No cow video: VID_087.mp4
+2025-12-28 00:27:43 - src.scanner - DEBUG - Multi/No cow video: VID_088.mp4
+2025-12-28 00:27:43 - src.scanner - DEBUG - Multi/No cow video: VID_089.mp4
+2025-12-28 00:27:49 - src.scanner - DEBUG - Multi/No cow video: VID_090.mp4
+2025-12-28 00:27:49 - src.scanner - DEBUG - Multi/No cow video: VID_091.mp4
+2025-12-28 00:27:50 - src.scanner - DEBUG - Multi/No cow video: VID_092.mp4
+2025-12-28 00:27:59 - src.scanner - DEBUG - Multi/No cow video: VID_093.mp4
+2025-12-28 00:28:01 - src.scanner - DEBUG - Multi/No cow video: VID_094.mp4
+2025-12-28 00:28:08 - src.scanner - DEBUG - Multi/No cow video: VID_095.mp4
+2025-12-28 00:28:09 - src.scanner - DEBUG - Multi/No cow video: VID_096.mp4
+2025-12-28 00:28:10 - src.scanner - DEBUG - Multi/No cow video: VID_097.mp4
+2025-12-28 00:28:10 - src.scanner - DEBUG - Multi/No cow video: VID_098.mp4
+2025-12-28 00:28:13 - src.scanner - DEBUG - Multi/No cow video: VID_099.mp4
+2025-12-28 00:28:18 - src.scanner - DEBUG - Multi/No cow video: VID_100.mp4
+2025-12-28 00:28:18 - src.scanner - DEBUG - Multi/No cow video: VID_101.mp4
+2025-12-28 00:28:21 - src.scanner - DEBUG - Multi/No cow video: VID_102.mp4
+2025-12-28 00:28:25 - src.scanner - DEBUG - Multi/No cow video: VID_103.mp4
+2025-12-28 00:28:25 - src.scanner - DEBUG - Multi/No cow video: VID_104.mp4
+2025-12-28 00:28:26 - src.scanner - DEBUG - Multi/No cow video: VID_105.mp4
+2025-12-28 00:28:26 - src.scanner - INFO - Scan complete. Found 1 single-cow videos.
+2025-12-28 00:28:26 - __main__ - INFO - Initializing video writer manager...
+2025-12-28 00:28:26 - __main__ - INFO - Initializing video processor...
+2025-12-28 00:28:26 - __main__ - INFO - Starting video processing...
+2025-12-28 00:28:26 - src.processor - INFO - Found 105 videos in C:\Users\Umut\Desktop\cow_videos
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_001.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_002.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_003.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_004.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_005.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_006.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_007.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_008.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_009.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_010.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_011.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_012.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_013.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_014.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_015.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Skipping already processed video: VID_016.mp4
+2025-12-28 00:28:26 - src.processor - INFO - Processing video: VID_017.mp4
+2025-12-28 00:28:26 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0001.mp4 (duration: 5.57s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 186 - too short (2.20s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 187 - too short (1.33s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 189 - too short (2.43s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0002.mp4 (duration: 4.47s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0003.mp4 (duration: 9.90s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0004.mp4 (duration: 7.70s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 195 - too short (1.83s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0005.mp4 (duration: 4.70s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 197 - too short (0.63s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 198 - too short (0.90s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 202 - too short (2.10s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0006.mp4 (duration: 6.90s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 209 - too short (1.40s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 210 - too short (0.33s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 207 - too short (3.60s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0007.mp4 (duration: 4.90s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0008.mp4 (duration: 6.87s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0009.mp4 (duration: 7.77s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0010.mp4 (duration: 8.13s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 215 - too short (3.43s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0011.mp4 (duration: 12.83s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0012.mp4 (duration: 15.77s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0013.mp4 (duration: 15.10s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 225 - too short (3.43s)
+2025-12-28 00:45:51 - src.writer - INFO - Saved cow video: VID_017_cow_0014.mp4 (duration: 5.77s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 227 - too short (1.97s)
+2025-12-28 00:45:51 - src.writer - DEBUG - Discarding track 230 - too short (1.30s)
+2025-12-28 00:45:51 - src.processor - INFO - Processing video: VID_018.mp4
+2025-12-28 00:45:51 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 00:56:09 - src.writer - INFO - Saved cow video: VID_018_cow_0001.mp4 (duration: 15.63s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 235 - too short (0.07s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 241 - too short (0.43s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 245 - too short (1.33s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 249 - too short (0.17s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 253 - too short (0.07s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 256 - too short (0.57s)
+2025-12-28 00:56:09 - src.writer - INFO - Saved cow video: VID_018_cow_0002.mp4 (duration: 6.63s)
+2025-12-28 00:56:09 - src.writer - INFO - Saved cow video: VID_018_cow_0003.mp4 (duration: 23.90s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 272 - too short (0.03s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 274 - too short (0.70s)
+2025-12-28 00:56:09 - src.writer - DEBUG - Discarding track 275 - too short (0.27s)
+2025-12-28 00:56:09 - src.processor - INFO - Processing video: VID_019.mp4
+2025-12-28 00:56:09 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 01:05:23 - src.writer - INFO - Saved cow video: VID_019_cow_0001.mp4 (duration: 9.47s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 277 - too short (0.87s)
+2025-12-28 01:05:23 - src.writer - INFO - Saved cow video: VID_019_cow_0002.mp4 (duration: 8.63s)
+2025-12-28 01:05:23 - src.writer - INFO - Saved cow video: VID_019_cow_0003.mp4 (duration: 15.00s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 280 - too short (0.93s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 283 - too short (0.60s)
+2025-12-28 01:05:23 - src.writer - INFO - Saved cow video: VID_019_cow_0004.mp4 (duration: 11.57s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 287 - too short (0.97s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 289 - too short (1.33s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 290 - too short (0.07s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 293 - too short (0.03s)
+2025-12-28 01:05:23 - src.writer - DEBUG - Discarding track 299 - too short (0.70s)
+2025-12-28 01:05:23 - src.processor - INFO - Processing video: VID_020.mp4
+2025-12-28 01:05:23 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 01:09:03 - __main__ - WARNING - 
+Process interrupted by user
+2025-12-28 01:28:49 - __main__ - INFO - ============================================================
+2025-12-28 01:28:49 - __main__ - INFO - Cow Extraction Project - Starting
+2025-12-28 01:28:49 - __main__ - INFO - ============================================================
+2025-12-28 01:28:49 - __main__ - DEBUG - Validating configuration...
+2025-12-28 01:28:49 - __main__ - DEBUG - Configuration validated successfully
+2025-12-28 01:28:49 - __main__ - INFO - Found existing output in: C:\Users\Umut\Desktop\cow_single_videos
+2025-12-28 01:28:53 - __main__ - INFO - Scanning existing output to resume...
+2025-12-28 01:28:53 - __main__ - INFO - Found 19 already processed videos.
+2025-12-28 01:28:53 - __main__ - INFO - Initializing YOLO detector...
+2025-12-28 01:28:53 - src.detector - INFO - Initializing YOLO detector with model: yolov8m-seg.pt
+2025-12-28 01:28:54 - src.detector - INFO - YOLO model loaded successfully
+2025-12-28 01:28:54 - src.detector - DEBUG - Target class ID: 19, Confidence threshold: 0.75
+2025-12-28 01:28:54 - __main__ - INFO - Initializing video scanner...
+2025-12-28 01:28:54 - __main__ - INFO - Found 105 total videos to process
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_001
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_002
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_003
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_004
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_005
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_006
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_007
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_008
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_009
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_010
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_011
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_012
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_013
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_014
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_015
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_016
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_017
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_018
+2025-12-28 01:28:54 - __main__ - DEBUG - Skipping already processed: VID_019
+2025-12-28 01:28:54 - __main__ - INFO - Starting pre-scan for single-cow videos on 86 videos...
+2025-12-28 01:28:54 - src.scanner - INFO - Starting scan of 86 videos for single-cow filter...
+2025-12-28 01:28:56 - src.scanner - DEBUG - Multi/No cow video: VID_020.mp4
+2025-12-28 01:29:37 - src.scanner - DEBUG - Multi/No cow video: VID_021.mp4
+2025-12-28 01:30:06 - src.scanner - DEBUG - Multi/No cow video: VID_022.mp4
+2025-12-28 01:30:45 - src.scanner - DEBUG - Multi/No cow video: VID_023.mp4
+2025-12-28 01:30:46 - src.scanner - DEBUG - Multi/No cow video: VID_024.mp4
+2025-12-28 01:30:46 - src.scanner - DEBUG - Multi/No cow video: VID_025.mp4
+2025-12-28 01:30:47 - src.scanner - DEBUG - Multi/No cow video: VID_026.mp4
+2025-12-28 01:31:00 - src.scanner - DEBUG - Multi/No cow video: VID_027.mp4
+2025-12-28 01:31:01 - src.scanner - DEBUG - Multi/No cow video: VID_028.mp4
+2025-12-28 01:31:29 - src.scanner - DEBUG - Multi/No cow video: VID_029.mp4
+2025-12-28 01:31:39 - src.scanner - DEBUG - Multi/No cow video: VID_030.mp4
+2025-12-28 01:31:40 - src.scanner - DEBUG - Multi/No cow video: VID_031.mp4
+2025-12-28 01:31:53 - src.scanner - DEBUG - Multi/No cow video: VID_032.mp4
+2025-12-28 01:31:59 - src.scanner - DEBUG - Multi/No cow video: VID_033.mp4
+2025-12-28 01:32:01 - src.scanner - DEBUG - Multi/No cow video: VID_034.mp4
+2025-12-28 01:32:01 - src.scanner - DEBUG - Multi/No cow video: VID_035.mp4
+2025-12-28 01:32:11 - src.scanner - DEBUG - Multi/No cow video: VID_036.mp4
+2025-12-28 01:32:12 - src.scanner - DEBUG - Multi/No cow video: VID_037.mp4
+2025-12-28 01:32:15 - src.scanner - DEBUG - Multi/No cow video: VID_038.mp4
+2025-12-28 01:33:01 - src.scanner - DEBUG - Multi/No cow video: VID_039.mp4
+2025-12-28 01:33:03 - src.scanner - DEBUG - Multi/No cow video: VID_040.mp4
+2025-12-28 01:33:03 - src.scanner - DEBUG - Multi/No cow video: VID_041.mp4
+2025-12-28 01:33:04 - src.scanner - DEBUG - Multi/No cow video: VID_042.mp4
+2025-12-28 01:33:05 - src.scanner - DEBUG - Multi/No cow video: VID_043.mp4
+2025-12-28 01:33:06 - src.scanner - DEBUG - Multi/No cow video: VID_044.mp4
+2025-12-28 01:33:06 - src.scanner - DEBUG - Multi/No cow video: VID_045.mp4
+2025-12-28 01:33:07 - src.scanner - DEBUG - Multi/No cow video: VID_046.mp4
+2025-12-28 01:33:10 - src.scanner - DEBUG - Multi/No cow video: VID_047.mp4
+2025-12-28 01:33:24 - src.scanner - DEBUG - Multi/No cow video: VID_048.mp4
+2025-12-28 01:33:25 - src.scanner - DEBUG - Multi/No cow video: VID_049.mp4
+2025-12-28 01:33:26 - src.scanner - DEBUG - Multi/No cow video: VID_050.mp4
+2025-12-28 01:33:28 - src.scanner - DEBUG - Multi/No cow video: VID_051.mp4
+2025-12-28 01:33:28 - src.scanner - DEBUG - Multi/No cow video: VID_052.mp4
+2025-12-28 01:33:31 - src.scanner - DEBUG - Multi/No cow video: VID_053.mp4
+2025-12-28 01:33:32 - src.scanner - DEBUG - Multi/No cow video: VID_054.mp4
+2025-12-28 01:33:32 - src.scanner - DEBUG - Multi/No cow video: VID_055.mp4
+2025-12-28 01:33:33 - src.scanner - DEBUG - Multi/No cow video: VID_056.mp4
+2025-12-28 01:34:14 - src.scanner - INFO - Single cow video identified: VID_057.mp4
+2025-12-28 01:34:14 - src.scanner - DEBUG - Copied to: C:\Users\Umut\Desktop\raw_single_cow_videos\VID_057.mp4
+2025-12-28 01:34:36 - src.scanner - DEBUG - Multi/No cow video: VID_058.mp4
+2025-12-28 01:34:37 - src.scanner - DEBUG - Multi/No cow video: VID_059.mp4
+2025-12-28 01:34:39 - src.scanner - DEBUG - Multi/No cow video: VID_060.mp4
+2025-12-28 01:34:39 - src.scanner - DEBUG - Multi/No cow video: VID_061.mp4
+2025-12-28 01:34:57 - src.scanner - DEBUG - Multi/No cow video: VID_062.mp4
+2025-12-28 01:35:07 - src.scanner - DEBUG - Multi/No cow video: VID_063.mp4
+2025-12-28 01:35:08 - src.scanner - DEBUG - Multi/No cow video: VID_064.mp4
+2025-12-28 01:35:08 - src.scanner - DEBUG - Multi/No cow video: VID_065.mp4
+2025-12-28 01:35:09 - src.scanner - DEBUG - Multi/No cow video: VID_066.mp4
+2025-12-28 01:35:09 - src.scanner - DEBUG - Multi/No cow video: VID_067.mp4
+2025-12-28 01:35:10 - src.scanner - DEBUG - Multi/No cow video: VID_068.mp4
+2025-12-28 01:35:11 - src.scanner - DEBUG - Multi/No cow video: VID_069.mp4
+2025-12-28 01:35:19 - src.scanner - DEBUG - Multi/No cow video: VID_070.mp4
+2025-12-28 01:35:23 - src.scanner - DEBUG - Multi/No cow video: VID_071.mp4
+2025-12-28 01:35:27 - src.scanner - DEBUG - Multi/No cow video: VID_072.mp4
+2025-12-28 01:35:57 - src.scanner - DEBUG - Multi/No cow video: VID_073.mp4
+2025-12-28 01:35:57 - src.scanner - DEBUG - Multi/No cow video: VID_074.mp4
+2025-12-28 01:35:58 - src.scanner - DEBUG - Multi/No cow video: VID_075.mp4
+2025-12-28 01:35:58 - src.scanner - DEBUG - Multi/No cow video: VID_076.mp4
+2025-12-28 01:35:59 - src.scanner - DEBUG - Multi/No cow video: VID_077.mp4
+2025-12-28 01:36:04 - src.scanner - DEBUG - Multi/No cow video: VID_078.mp4
+2025-12-28 01:36:22 - src.scanner - DEBUG - Multi/No cow video: VID_079.mp4
+2025-12-28 01:36:32 - src.scanner - DEBUG - Multi/No cow video: VID_080.mp4
+2025-12-28 01:36:33 - src.scanner - DEBUG - Multi/No cow video: VID_081.mp4
+2025-12-28 01:36:33 - src.scanner - DEBUG - Multi/No cow video: VID_082.mp4
+2025-12-28 01:36:34 - src.scanner - DEBUG - Multi/No cow video: VID_083.mp4
+2025-12-28 01:36:35 - src.scanner - DEBUG - Multi/No cow video: VID_084.mp4
+2025-12-28 01:36:35 - src.scanner - DEBUG - Multi/No cow video: VID_085.mp4
+2025-12-28 01:36:36 - src.scanner - DEBUG - Multi/No cow video: VID_086.mp4
+2025-12-28 01:36:37 - src.scanner - DEBUG - Multi/No cow video: VID_087.mp4
+2025-12-28 01:36:38 - src.scanner - DEBUG - Multi/No cow video: VID_088.mp4
+2025-12-28 01:36:38 - src.scanner - DEBUG - Multi/No cow video: VID_089.mp4
+2025-12-28 01:36:43 - src.scanner - DEBUG - Multi/No cow video: VID_090.mp4
+2025-12-28 01:36:44 - src.scanner - DEBUG - Multi/No cow video: VID_091.mp4
+2025-12-28 01:36:44 - src.scanner - DEBUG - Multi/No cow video: VID_092.mp4
+2025-12-28 01:36:53 - src.scanner - DEBUG - Multi/No cow video: VID_093.mp4
+2025-12-28 01:36:55 - src.scanner - DEBUG - Multi/No cow video: VID_094.mp4
+2025-12-28 01:37:02 - src.scanner - DEBUG - Multi/No cow video: VID_095.mp4
+2025-12-28 01:37:02 - src.scanner - DEBUG - Multi/No cow video: VID_096.mp4
+2025-12-28 01:37:04 - src.scanner - DEBUG - Multi/No cow video: VID_097.mp4
+2025-12-28 01:37:04 - src.scanner - DEBUG - Multi/No cow video: VID_098.mp4
+2025-12-28 01:37:07 - src.scanner - DEBUG - Multi/No cow video: VID_099.mp4
+2025-12-28 01:37:12 - src.scanner - DEBUG - Multi/No cow video: VID_100.mp4
+2025-12-28 01:37:12 - src.scanner - DEBUG - Multi/No cow video: VID_101.mp4
+2025-12-28 01:37:15 - src.scanner - DEBUG - Multi/No cow video: VID_102.mp4
+2025-12-28 01:37:19 - src.scanner - DEBUG - Multi/No cow video: VID_103.mp4
+2025-12-28 01:37:19 - src.scanner - DEBUG - Multi/No cow video: VID_104.mp4
+2025-12-28 01:37:20 - src.scanner - DEBUG - Multi/No cow video: VID_105.mp4
+2025-12-28 01:37:20 - src.scanner - INFO - Scan complete. Found 1 single-cow videos.
+2025-12-28 01:37:20 - __main__ - INFO - Initializing video writer manager...
+2025-12-28 01:37:20 - __main__ - INFO - Initializing video processor...
+2025-12-28 01:37:20 - __main__ - INFO - Starting video processing...
+2025-12-28 01:37:20 - src.processor - INFO - Found 105 videos in C:\Users\Umut\Desktop\cow_videos
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_001.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_002.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_003.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_004.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_005.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_006.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_007.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_008.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_009.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_010.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_011.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_012.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_013.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_014.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_015.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_016.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_017.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_018.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Skipping already processed video: VID_019.mp4
+2025-12-28 01:37:20 - src.processor - INFO - Processing video: VID_020.mp4
+2025-12-28 01:37:20 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 01:58:26 - __main__ - INFO - ============================================================
+2025-12-28 01:58:26 - __main__ - INFO - Cow Extraction Project - Starting
+2025-12-28 01:58:26 - __main__ - INFO - ============================================================
+2025-12-28 01:58:26 - __main__ - DEBUG - Validating configuration...
+2025-12-28 01:58:26 - __main__ - DEBUG - Configuration validated successfully
+2025-12-28 01:58:26 - __main__ - INFO - Found existing output in: C:\Users\Umut\Desktop\cow_single_videos
+2025-12-28 01:58:30 - __main__ - INFO - Scanning existing output to resume...
+2025-12-28 01:58:30 - __main__ - INFO - Found 16 already processed videos.
+2025-12-28 01:58:30 - __main__ - INFO - Initializing YOLO detector...
+2025-12-28 01:58:30 - src.detector - INFO - Initializing YOLO detector with model: yolov8m-seg.pt
+2025-12-28 01:58:30 - src.detector - INFO - YOLO model loaded successfully
+2025-12-28 01:58:30 - src.detector - DEBUG - Target class ID: 19, Confidence threshold: 0.75
+2025-12-28 01:58:30 - __main__ - INFO - Initializing video scanner...
+2025-12-28 01:58:30 - __main__ - INFO - Found 105 total videos to process
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_001
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_002
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_003
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_004
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_005
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_006
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_007
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_008
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_009
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_010
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_011
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_012
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_013
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_014
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_015
+2025-12-28 01:58:30 - __main__ - DEBUG - Skipping already processed: VID_016
+2025-12-28 01:58:30 - __main__ - INFO - Starting pre-scan for single-cow videos on 89 videos...
+2025-12-28 01:58:30 - src.scanner - INFO - Starting scan of 89 videos for single-cow filter...
+2025-12-28 01:58:32 - src.scanner - DEBUG - Multi/No cow video: VID_017.mp4
+2025-12-28 01:58:50 - src.scanner - DEBUG - Multi/No cow video: VID_018.mp4
+2025-12-28 01:58:51 - src.scanner - DEBUG - Multi/No cow video: VID_019.mp4
+2025-12-28 01:58:53 - src.scanner - DEBUG - Multi/No cow video: VID_020.mp4
+2025-12-28 01:59:32 - src.scanner - DEBUG - Multi/No cow video: VID_021.mp4
+2025-12-28 02:00:00 - src.scanner - DEBUG - Multi/No cow video: VID_022.mp4
+2025-12-28 02:00:37 - src.scanner - DEBUG - Multi/No cow video: VID_023.mp4
+2025-12-28 02:00:38 - src.scanner - DEBUG - Multi/No cow video: VID_024.mp4
+2025-12-28 02:00:39 - src.scanner - DEBUG - Multi/No cow video: VID_025.mp4
+2025-12-28 02:00:39 - src.scanner - DEBUG - Multi/No cow video: VID_026.mp4
+2025-12-28 02:00:52 - src.scanner - DEBUG - Multi/No cow video: VID_027.mp4
+2025-12-28 02:00:53 - src.scanner - DEBUG - Multi/No cow video: VID_028.mp4
+2025-12-28 02:01:19 - src.scanner - DEBUG - Multi/No cow video: VID_029.mp4
+2025-12-28 02:01:29 - src.scanner - DEBUG - Multi/No cow video: VID_030.mp4
+2025-12-28 02:01:30 - src.scanner - DEBUG - Multi/No cow video: VID_031.mp4
+2025-12-28 02:01:42 - src.scanner - DEBUG - Multi/No cow video: VID_032.mp4
+2025-12-28 02:01:48 - src.scanner - DEBUG - Multi/No cow video: VID_033.mp4
+2025-12-28 02:01:50 - src.scanner - DEBUG - Multi/No cow video: VID_034.mp4
+2025-12-28 02:01:51 - src.scanner - DEBUG - Multi/No cow video: VID_035.mp4
+2025-12-28 02:02:00 - src.scanner - DEBUG - Multi/No cow video: VID_036.mp4
+2025-12-28 02:02:01 - src.scanner - DEBUG - Multi/No cow video: VID_037.mp4
+2025-12-28 02:02:04 - src.scanner - DEBUG - Multi/No cow video: VID_038.mp4
+2025-12-28 02:02:45 - src.scanner - DEBUG - Multi/No cow video: VID_039.mp4
+2025-12-28 02:02:48 - src.scanner - DEBUG - Multi/No cow video: VID_040.mp4
+2025-12-28 02:02:48 - src.scanner - DEBUG - Multi/No cow video: VID_041.mp4
+2025-12-28 02:02:49 - src.scanner - DEBUG - Multi/No cow video: VID_042.mp4
+2025-12-28 02:02:50 - src.scanner - DEBUG - Multi/No cow video: VID_043.mp4
+2025-12-28 02:02:50 - src.scanner - DEBUG - Multi/No cow video: VID_044.mp4
+2025-12-28 02:02:51 - src.scanner - DEBUG - Multi/No cow video: VID_045.mp4
+2025-12-28 02:02:51 - src.scanner - DEBUG - Multi/No cow video: VID_046.mp4
+2025-12-28 02:02:54 - src.scanner - DEBUG - Multi/No cow video: VID_047.mp4
+2025-12-28 02:03:08 - src.scanner - DEBUG - Multi/No cow video: VID_048.mp4
+2025-12-28 02:03:09 - src.scanner - DEBUG - Multi/No cow video: VID_049.mp4
+2025-12-28 02:03:09 - src.scanner - DEBUG - Multi/No cow video: VID_050.mp4
+2025-12-28 02:03:11 - src.scanner - DEBUG - Multi/No cow video: VID_051.mp4
+2025-12-28 02:03:12 - src.scanner - DEBUG - Multi/No cow video: VID_052.mp4
+2025-12-28 02:03:15 - src.scanner - DEBUG - Multi/No cow video: VID_053.mp4
+2025-12-28 02:03:15 - src.scanner - DEBUG - Multi/No cow video: VID_054.mp4
+2025-12-28 02:03:16 - src.scanner - DEBUG - Multi/No cow video: VID_055.mp4
+2025-12-28 02:03:16 - src.scanner - DEBUG - Multi/No cow video: VID_056.mp4
+2025-12-28 02:03:56 - src.scanner - INFO - Single cow video identified: VID_057.mp4
+2025-12-28 02:03:56 - src.scanner - DEBUG - Copied to: C:\Users\Umut\Desktop\raw_single_cow_videos\VID_057.mp4
+2025-12-28 02:04:16 - src.scanner - DEBUG - Multi/No cow video: VID_058.mp4
+2025-12-28 02:04:17 - src.scanner - DEBUG - Multi/No cow video: VID_059.mp4
+2025-12-28 02:04:19 - src.scanner - DEBUG - Multi/No cow video: VID_060.mp4
+2025-12-28 02:04:20 - src.scanner - DEBUG - Multi/No cow video: VID_061.mp4
+2025-12-28 02:04:37 - src.scanner - DEBUG - Multi/No cow video: VID_062.mp4
+2025-12-28 02:04:46 - src.scanner - DEBUG - Multi/No cow video: VID_063.mp4
+2025-12-28 02:04:47 - src.scanner - DEBUG - Multi/No cow video: VID_064.mp4
+2025-12-28 02:04:47 - src.scanner - DEBUG - Multi/No cow video: VID_065.mp4
+2025-12-28 02:04:48 - src.scanner - DEBUG - Multi/No cow video: VID_066.mp4
+2025-12-28 02:04:49 - src.scanner - DEBUG - Multi/No cow video: VID_067.mp4
+2025-12-28 02:04:49 - src.scanner - DEBUG - Multi/No cow video: VID_068.mp4
+2025-12-28 02:04:50 - src.scanner - DEBUG - Multi/No cow video: VID_069.mp4
+2025-12-28 02:04:58 - src.scanner - DEBUG - Multi/No cow video: VID_070.mp4
+2025-12-28 02:05:01 - src.scanner - DEBUG - Multi/No cow video: VID_071.mp4
+2025-12-28 02:05:06 - src.scanner - DEBUG - Multi/No cow video: VID_072.mp4
+2025-12-28 02:05:34 - src.scanner - DEBUG - Multi/No cow video: VID_073.mp4
+2025-12-28 02:05:34 - src.scanner - DEBUG - Multi/No cow video: VID_074.mp4
+2025-12-28 02:05:35 - src.scanner - DEBUG - Multi/No cow video: VID_075.mp4
+2025-12-28 02:05:35 - src.scanner - DEBUG - Multi/No cow video: VID_076.mp4
+2025-12-28 02:05:36 - src.scanner - DEBUG - Multi/No cow video: VID_077.mp4
+2025-12-28 02:05:41 - src.scanner - DEBUG - Multi/No cow video: VID_078.mp4
+2025-12-28 02:05:59 - src.scanner - DEBUG - Multi/No cow video: VID_079.mp4
+2025-12-28 02:06:08 - src.scanner - DEBUG - Multi/No cow video: VID_080.mp4
+2025-12-28 02:06:09 - src.scanner - DEBUG - Multi/No cow video: VID_081.mp4
+2025-12-28 02:06:09 - src.scanner - DEBUG - Multi/No cow video: VID_082.mp4
+2025-12-28 02:06:10 - src.scanner - DEBUG - Multi/No cow video: VID_083.mp4
+2025-12-28 02:06:11 - src.scanner - DEBUG - Multi/No cow video: VID_084.mp4
+2025-12-28 02:06:11 - src.scanner - DEBUG - Multi/No cow video: VID_085.mp4
+2025-12-28 02:06:12 - src.scanner - DEBUG - Multi/No cow video: VID_086.mp4
+2025-12-28 02:06:13 - src.scanner - DEBUG - Multi/No cow video: VID_087.mp4
+2025-12-28 02:06:14 - src.scanner - DEBUG - Multi/No cow video: VID_088.mp4
+2025-12-28 02:06:14 - src.scanner - DEBUG - Multi/No cow video: VID_089.mp4
+2025-12-28 02:06:19 - src.scanner - DEBUG - Multi/No cow video: VID_090.mp4
+2025-12-28 02:06:19 - src.scanner - DEBUG - Multi/No cow video: VID_091.mp4
+2025-12-28 02:06:20 - src.scanner - DEBUG - Multi/No cow video: VID_092.mp4
+2025-12-28 02:06:28 - src.scanner - DEBUG - Multi/No cow video: VID_093.mp4
+2025-12-28 02:06:30 - src.scanner - DEBUG - Multi/No cow video: VID_094.mp4
+2025-12-28 02:06:36 - src.scanner - DEBUG - Multi/No cow video: VID_095.mp4
+2025-12-28 02:06:37 - src.scanner - DEBUG - Multi/No cow video: VID_096.mp4
+2025-12-28 02:06:38 - src.scanner - DEBUG - Multi/No cow video: VID_097.mp4
+2025-12-28 02:06:39 - src.scanner - DEBUG - Multi/No cow video: VID_098.mp4
+2025-12-28 02:06:41 - src.scanner - DEBUG - Multi/No cow video: VID_099.mp4
+2025-12-28 02:06:46 - src.scanner - DEBUG - Multi/No cow video: VID_100.mp4
+2025-12-28 02:06:46 - src.scanner - DEBUG - Multi/No cow video: VID_101.mp4
+2025-12-28 02:06:49 - src.scanner - DEBUG - Multi/No cow video: VID_102.mp4
+2025-12-28 02:06:52 - src.scanner - DEBUG - Multi/No cow video: VID_103.mp4
+2025-12-28 02:06:52 - src.scanner - DEBUG - Multi/No cow video: VID_104.mp4
+2025-12-28 02:06:53 - src.scanner - DEBUG - Multi/No cow video: VID_105.mp4
+2025-12-28 02:06:53 - src.scanner - INFO - Scan complete. Found 1 single-cow videos.
+2025-12-28 02:06:53 - __main__ - INFO - Initializing video writer manager...
+2025-12-28 02:06:53 - __main__ - INFO - Initializing video processor...
+2025-12-28 02:06:53 - __main__ - INFO - Starting video processing...
+2025-12-28 02:06:53 - src.processor - INFO - Found 105 videos in C:\Users\Umut\Desktop\cow_videos
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_001.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_002.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_003.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_004.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_005.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_006.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_007.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_008.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_009.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_010.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_011.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_012.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_013.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_014.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_015.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Skipping already processed video: VID_016.mp4
+2025-12-28 02:06:53 - src.processor - INFO - Processing video: VID_017.mp4
+2025-12-28 02:06:53 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0001.mp4 (duration: 5.57s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 186 - too short (2.20s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 187 - too short (1.33s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 189 - too short (2.43s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0002.mp4 (duration: 4.47s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0003.mp4 (duration: 9.90s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0004.mp4 (duration: 7.70s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 195 - too short (1.83s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0005.mp4 (duration: 4.70s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 197 - too short (0.63s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 198 - too short (0.90s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 202 - too short (2.10s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0006.mp4 (duration: 6.90s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 209 - too short (1.40s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 210 - too short (0.33s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 207 - too short (3.60s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0007.mp4 (duration: 4.90s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0008.mp4 (duration: 6.87s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0009.mp4 (duration: 7.77s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0010.mp4 (duration: 8.13s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 215 - too short (3.43s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0011.mp4 (duration: 12.83s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0012.mp4 (duration: 15.77s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0013.mp4 (duration: 15.10s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 225 - too short (3.43s)
+2025-12-28 02:22:48 - src.writer - INFO - Saved cow video: VID_017_cow_0014.mp4 (duration: 5.77s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 227 - too short (1.97s)
+2025-12-28 02:22:48 - src.writer - DEBUG - Discarding track 230 - too short (1.30s)
+2025-12-28 02:22:48 - src.processor - INFO - Processing video: VID_018.mp4
+2025-12-28 02:22:48 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 02:32:30 - src.writer - INFO - Saved cow video: VID_018_cow_0001.mp4 (duration: 15.63s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 235 - too short (0.07s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 241 - too short (0.43s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 245 - too short (1.33s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 249 - too short (0.17s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 253 - too short (0.07s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 256 - too short (0.57s)
+2025-12-28 02:32:30 - src.writer - INFO - Saved cow video: VID_018_cow_0002.mp4 (duration: 6.63s)
+2025-12-28 02:32:30 - src.writer - INFO - Saved cow video: VID_018_cow_0003.mp4 (duration: 23.90s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 272 - too short (0.03s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 274 - too short (0.70s)
+2025-12-28 02:32:30 - src.writer - DEBUG - Discarding track 275 - too short (0.27s)
+2025-12-28 02:32:30 - src.processor - INFO - Processing video: VID_019.mp4
+2025-12-28 02:32:30 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 02:40:46 - src.writer - INFO - Saved cow video: VID_019_cow_0001.mp4 (duration: 9.47s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 277 - too short (0.87s)
+2025-12-28 02:40:46 - src.writer - INFO - Saved cow video: VID_019_cow_0002.mp4 (duration: 8.63s)
+2025-12-28 02:40:46 - src.writer - INFO - Saved cow video: VID_019_cow_0003.mp4 (duration: 15.00s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 280 - too short (0.93s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 283 - too short (0.60s)
+2025-12-28 02:40:46 - src.writer - INFO - Saved cow video: VID_019_cow_0004.mp4 (duration: 11.57s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 287 - too short (0.97s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 289 - too short (1.33s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 290 - too short (0.07s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 293 - too short (0.03s)
+2025-12-28 02:40:46 - src.writer - DEBUG - Discarding track 299 - too short (0.70s)
+2025-12-28 02:40:46 - src.processor - INFO - Processing video: VID_020.mp4
+2025-12-28 02:40:46 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0001.mp4 (duration: 6.07s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 300 - too short (0.80s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 302 - too short (3.53s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0002.mp4 (duration: 7.30s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 306 - too short (0.13s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 308 - too short (0.83s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 309 - too short (0.50s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0003.mp4 (duration: 7.60s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 317 - too short (0.87s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 320 - too short (2.10s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 321 - too short (0.47s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 322 - too short (1.73s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 323 - too short (1.23s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0004.mp4 (duration: 4.37s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0005.mp4 (duration: 10.70s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 331 - too short (0.83s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 332 - too short (0.20s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 334 - too short (2.03s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 337 - too short (0.43s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 340 - too short (0.37s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 341 - too short (0.93s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 346 - too short (0.10s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 347 - too short (0.13s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 348 - too short (1.87s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0006.mp4 (duration: 6.87s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 350 - too short (0.47s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 351 - too short (0.77s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 353 - too short (0.03s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0007.mp4 (duration: 6.30s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 355 - too short (2.90s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0008.mp4 (duration: 9.10s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 361 - too short (1.17s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 364 - too short (2.00s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0009.mp4 (duration: 4.83s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 368 - too short (0.10s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0010.mp4 (duration: 10.73s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 371 - too short (0.70s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 373 - too short (0.77s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 374 - too short (0.27s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 375 - too short (1.13s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 377 - too short (3.83s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 382 - too short (0.73s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0011.mp4 (duration: 7.47s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 386 - too short (0.17s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 387 - too short (2.60s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 388 - too short (0.97s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 389 - too short (1.43s)
+2025-12-28 03:02:33 - src.writer - INFO - Saved cow video: VID_020_cow_0012.mp4 (duration: 13.90s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 391 - too short (1.57s)
+2025-12-28 03:02:33 - src.writer - DEBUG - Discarding track 392 - too short (3.13s)
+2025-12-28 03:02:33 - src.processor - INFO - Processing video: VID_021.mp4
+2025-12-28 03:02:33 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0001.mp4 (duration: 26.33s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 395 - too short (0.87s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 397 - too short (1.97s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0002.mp4 (duration: 21.03s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0003.mp4 (duration: 6.43s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0004.mp4 (duration: 15.93s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 403 - too short (0.30s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0005.mp4 (duration: 8.33s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0006.mp4 (duration: 9.07s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0007.mp4 (duration: 4.93s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0008.mp4 (duration: 7.73s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 415 - too short (2.67s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0009.mp4 (duration: 9.27s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 418 - too short (2.30s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0010.mp4 (duration: 20.63s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 421 - too short (0.40s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 424 - too short (0.60s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 427 - too short (0.03s)
+2025-12-28 03:30:01 - src.writer - INFO - Saved cow video: VID_021_cow_0011.mp4 (duration: 4.27s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 432 - too short (1.83s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 434 - too short (0.77s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 436 - too short (3.67s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 437 - too short (2.47s)
+2025-12-28 03:30:01 - src.writer - DEBUG - Discarding track 438 - too short (1.57s)
+2025-12-28 03:30:01 - src.processor - INFO - Processing video: VID_022.mp4
+2025-12-28 03:30:01 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 441 - too short (2.77s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 443 - too short (1.07s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 445 - too short (0.10s)
+2025-12-28 03:41:18 - src.writer - INFO - Saved cow video: VID_022_cow_0001.mp4 (duration: 16.60s)
+2025-12-28 03:41:18 - src.writer - INFO - Saved cow video: VID_022_cow_0002.mp4 (duration: 7.00s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 449 - too short (1.87s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 451 - too short (3.47s)
+2025-12-28 03:41:18 - src.writer - INFO - Saved cow video: VID_022_cow_0003.mp4 (duration: 7.47s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 458 - too short (2.40s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 459 - too short (0.17s)
+2025-12-28 03:41:18 - src.writer - INFO - Saved cow video: VID_022_cow_0004.mp4 (duration: 15.97s)
+2025-12-28 03:41:18 - src.writer - INFO - Saved cow video: VID_022_cow_0005.mp4 (duration: 11.20s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 464 - too short (0.50s)
+2025-12-28 03:41:18 - src.writer - DEBUG - Discarding track 469 - too short (2.47s)
+2025-12-28 03:41:18 - src.processor - INFO - Processing video: VID_023.mp4
+2025-12-28 03:41:18 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0001.mp4 (duration: 14.90s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0002.mp4 (duration: 5.07s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0003.mp4 (duration: 6.30s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0004.mp4 (duration: 6.00s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 477 - too short (0.60s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 478 - too short (1.43s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 479 - too short (2.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 480 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 481 - too short (1.47s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0005.mp4 (duration: 7.07s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0006.mp4 (duration: 5.23s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0007.mp4 (duration: 6.70s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0008.mp4 (duration: 9.67s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0009.mp4 (duration: 4.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 490 - too short (0.77s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 493 - too short (2.47s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 494 - too short (0.13s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0010.mp4 (duration: 8.63s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0011.mp4 (duration: 6.53s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 498 - too short (0.03s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0012.mp4 (duration: 6.07s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 501 - too short (1.33s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 503 - too short (1.13s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 502 - too short (1.13s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 504 - too short (0.03s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0013.mp4 (duration: 7.23s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 506 - too short (0.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 507 - too short (0.30s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0014.mp4 (duration: 9.70s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 509 - too short (1.70s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 510 - too short (1.27s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0015.mp4 (duration: 8.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 513 - too short (3.97s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 515 - too short (0.63s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 516 - too short (0.70s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 518 - too short (0.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 517 - too short (0.47s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0016.mp4 (duration: 4.30s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 520 - too short (3.00s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 521 - too short (3.90s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0017.mp4 (duration: 12.87s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 523 - too short (1.90s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 525 - too short (0.40s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0018.mp4 (duration: 7.23s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0019.mp4 (duration: 9.63s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 531 - too short (0.07s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 534 - too short (0.90s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 535 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0020.mp4 (duration: 7.67s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0021.mp4 (duration: 5.90s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 541 - too short (0.10s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0022.mp4 (duration: 5.00s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 544 - too short (0.23s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 552 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 554 - too short (0.13s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0023.mp4 (duration: 9.50s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 555 - too short (0.37s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 556 - too short (0.03s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 559 - too short (0.30s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 560 - too short (0.43s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0024.mp4 (duration: 6.50s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 566 - too short (3.97s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0025.mp4 (duration: 6.03s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0026.mp4 (duration: 8.70s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0027.mp4 (duration: 6.30s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 573 - too short (3.07s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 574 - too short (0.10s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 575 - too short (1.20s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0028.mp4 (duration: 6.40s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 577 - too short (0.33s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 583 - too short (0.53s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0029.mp4 (duration: 7.43s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 584 - too short (0.10s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 585 - too short (0.13s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 586 - too short (0.03s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0030.mp4 (duration: 8.70s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 589 - too short (3.13s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0031.mp4 (duration: 5.43s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 592 - too short (0.43s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0032.mp4 (duration: 5.37s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 594 - too short (1.37s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0033.mp4 (duration: 12.63s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 599 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 598 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0034.mp4 (duration: 4.63s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0035.mp4 (duration: 8.63s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 607 - too short (0.77s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 608 - too short (0.93s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 609 - too short (0.03s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 611 - too short (0.30s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0036.mp4 (duration: 7.50s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0037.mp4 (duration: 6.20s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 614 - too short (3.90s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 615 - too short (0.53s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 618 - too short (0.57s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 620 - too short (2.83s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0038.mp4 (duration: 9.80s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 628 - too short (1.30s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 629 - too short (0.17s)
+2025-12-28 04:51:34 - src.writer - INFO - Saved cow video: VID_023_cow_0039.mp4 (duration: 14.17s)
+2025-12-28 04:51:34 - src.writer - DEBUG - Discarding track 631 - too short (0.03s)
+2025-12-28 04:51:34 - src.processor - INFO - Processing video: VID_024.mp4
+2025-12-28 04:51:34 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:02:02 - src.writer - INFO - Saved cow video: VID_024_cow_0001.mp4 (duration: 26.40s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 635 - too short (1.07s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 636 - too short (0.10s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 638 - too short (1.57s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 645 - too short (3.07s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 648 - too short (0.30s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 650 - too short (0.40s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 653 - too short (1.80s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 654 - too short (1.03s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 656 - too short (1.47s)
+2025-12-28 05:02:02 - src.writer - INFO - Saved cow video: VID_024_cow_0002.mp4 (duration: 8.57s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 661 - too short (0.03s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 662 - too short (0.67s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 664 - too short (0.73s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 665 - too short (0.97s)
+2025-12-28 05:02:02 - src.writer - INFO - Saved cow video: VID_024_cow_0003.mp4 (duration: 8.43s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 668 - too short (3.20s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 670 - too short (3.37s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 671 - too short (3.10s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 672 - too short (2.73s)
+2025-12-28 05:02:02 - src.writer - DEBUG - Discarding track 673 - too short (0.13s)
+2025-12-28 05:02:02 - src.processor - INFO - Processing video: VID_025.mp4
+2025-12-28 05:02:02 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:07:29 - src.writer - INFO - Saved cow video: VID_025_cow_0001.mp4 (duration: 8.83s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 672 - too short (0.07s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 674 - too short (1.17s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 675 - too short (0.03s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 676 - too short (0.23s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 678 - too short (0.03s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 677 - too short (0.33s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 679 - too short (2.20s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 685 - too short (1.53s)
+2025-12-28 05:07:29 - src.writer - INFO - Saved cow video: VID_025_cow_0002.mp4 (duration: 13.33s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 690 - too short (0.07s)
+2025-12-28 05:07:29 - src.writer - INFO - Saved cow video: VID_025_cow_0003.mp4 (duration: 8.97s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 693 - too short (0.13s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 694 - too short (0.10s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 697 - too short (1.37s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 699 - too short (0.03s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 704 - too short (1.07s)
+2025-12-28 05:07:29 - src.writer - DEBUG - Discarding track 705 - too short (0.03s)
+2025-12-28 05:07:29 - src.processor - INFO - Processing video: VID_026.mp4
+2025-12-28 05:07:29 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:14:31 - src.writer - INFO - Saved cow video: VID_026_cow_0001.mp4 (duration: 4.10s)
+2025-12-28 05:14:31 - src.writer - INFO - Saved cow video: VID_026_cow_0002.mp4 (duration: 9.60s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 717 - too short (0.90s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 719 - too short (0.03s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 725 - too short (0.17s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 727 - too short (3.53s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 729 - too short (0.10s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 731 - too short (0.07s)
+2025-12-28 05:14:31 - src.writer - INFO - Saved cow video: VID_026_cow_0003.mp4 (duration: 5.10s)
+2025-12-28 05:14:31 - src.writer - INFO - Saved cow video: VID_026_cow_0004.mp4 (duration: 6.17s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 735 - too short (0.47s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 739 - too short (0.20s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 740 - too short (1.40s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 742 - too short (0.03s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 743 - too short (1.40s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 744 - too short (0.47s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 748 - too short (0.13s)
+2025-12-28 05:14:31 - src.writer - INFO - Saved cow video: VID_026_cow_0005.mp4 (duration: 5.77s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 751 - too short (0.73s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 752 - too short (2.40s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 753 - too short (0.10s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 756 - too short (3.93s)
+2025-12-28 05:14:31 - src.writer - DEBUG - Discarding track 758 - too short (0.27s)
+2025-12-28 05:14:31 - src.processor - INFO - Processing video: VID_027.mp4
+2025-12-28 05:14:31 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0001.mp4 (duration: 6.43s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 761 - too short (0.73s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0002.mp4 (duration: 4.93s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 763 - too short (0.03s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0003.mp4 (duration: 19.47s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 766 - too short (2.03s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 769 - too short (0.87s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0004.mp4 (duration: 7.00s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0005.mp4 (duration: 4.00s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0006.mp4 (duration: 5.07s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0007.mp4 (duration: 4.43s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 775 - too short (1.00s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0008.mp4 (duration: 5.70s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 778 - too short (0.17s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 780 - too short (0.07s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 781 - too short (1.00s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 788 - too short (3.47s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 789 - too short (3.70s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 791 - too short (2.07s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 792 - too short (3.97s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 793 - too short (3.53s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 794 - too short (0.23s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 798 - too short (0.77s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0009.mp4 (duration: 6.70s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 809 - too short (0.37s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 813 - too short (3.10s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 817 - too short (2.67s)
+2025-12-28 05:32:37 - src.writer - INFO - Saved cow video: VID_027_cow_0010.mp4 (duration: 9.90s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 819 - too short (2.30s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 820 - too short (0.07s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 827 - too short (0.37s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 828 - too short (0.37s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 832 - too short (0.20s)
+2025-12-28 05:32:37 - src.writer - DEBUG - Discarding track 833 - too short (0.10s)
+2025-12-28 05:32:37 - src.processor - INFO - Processing video: VID_028.mp4
+2025-12-28 05:32:37 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:35:37 - src.writer - INFO - Saved cow video: VID_028_cow_0001.mp4 (duration: 4.47s)
+2025-12-28 05:35:37 - src.writer - DEBUG - Discarding track 839 - too short (1.53s)
+2025-12-28 05:35:37 - src.writer - INFO - Saved cow video: VID_028_cow_0002.mp4 (duration: 9.73s)
+2025-12-28 05:35:37 - src.writer - DEBUG - Discarding track 842 - too short (1.70s)
+2025-12-28 05:35:37 - src.writer - DEBUG - Discarding track 843 - too short (2.23s)
+2025-12-28 05:35:37 - src.processor - INFO - Processing video: VID_029.mp4
+2025-12-28 05:35:37 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:39:44 - src.writer - INFO - Saved cow video: VID_029_cow_0001.mp4 (duration: 6.77s)
+2025-12-28 05:39:44 - src.writer - INFO - Saved cow video: VID_029_cow_0002.mp4 (duration: 9.97s)
+2025-12-28 05:39:44 - src.writer - INFO - Saved cow video: VID_029_cow_0003.mp4 (duration: 4.70s)
+2025-12-28 05:39:44 - src.processor - INFO - Processing video: VID_030.mp4
+2025-12-28 05:39:44 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:42:02 - src.writer - INFO - Saved cow video: VID_030_cow_0001.mp4 (duration: 10.77s)
+2025-12-28 05:42:02 - src.writer - DEBUG - Discarding track 850 - too short (0.27s)
+2025-12-28 05:42:02 - src.processor - INFO - Processing video: VID_031.mp4
+2025-12-28 05:42:02 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 05:48:45 - src.writer - INFO - Saved cow video: VID_031_cow_0001.mp4 (duration: 27.13s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 854 - too short (0.07s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 855 - too short (0.03s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 858 - too short (0.37s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 861 - too short (0.77s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 862 - too short (0.17s)
+2025-12-28 05:48:45 - src.writer - DEBUG - Discarding track 863 - too short (1.27s)
+2025-12-28 05:48:45 - src.processor - INFO - Processing video: VID_032.mp4
+2025-12-28 05:48:45 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:01:38 - src.writer - INFO - Saved cow video: VID_032_cow_0001.mp4 (duration: 22.60s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 867 - too short (0.13s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 869 - too short (0.03s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 870 - too short (0.30s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 874 - too short (0.10s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 877 - too short (0.33s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 881 - too short (0.53s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 882 - too short (3.40s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 883 - too short (2.60s)
+2025-12-28 06:01:38 - src.writer - INFO - Saved cow video: VID_032_cow_0002.mp4 (duration: 5.93s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 887 - too short (0.20s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 888 - too short (2.10s)
+2025-12-28 06:01:38 - src.writer - INFO - Saved cow video: VID_032_cow_0003.mp4 (duration: 5.87s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 891 - too short (0.13s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 893 - too short (0.03s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 894 - too short (0.27s)
+2025-12-28 06:01:38 - src.writer - INFO - Saved cow video: VID_032_cow_0004.mp4 (duration: 4.67s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 896 - too short (1.07s)
+2025-12-28 06:01:38 - src.writer - INFO - Saved cow video: VID_032_cow_0005.mp4 (duration: 9.23s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 900 - too short (1.37s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 901 - too short (0.93s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 902 - too short (2.87s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 903 - too short (1.23s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 905 - too short (2.53s)
+2025-12-28 06:01:38 - src.writer - DEBUG - Discarding track 907 - too short (2.27s)
+2025-12-28 06:01:38 - src.processor - INFO - Processing video: VID_033.mp4
+2025-12-28 06:01:38 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 908 - too short (3.30s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0001.mp4 (duration: 5.60s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 911 - too short (0.33s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0002.mp4 (duration: 5.80s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0003.mp4 (duration: 5.40s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0004.mp4 (duration: 4.70s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 920 - too short (0.37s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 917 - too short (2.07s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 921 - too short (1.13s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 922 - too short (3.73s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 923 - too short (3.83s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 925 - too short (0.27s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 926 - too short (0.27s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 933 - too short (0.47s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0005.mp4 (duration: 5.63s)
+2025-12-28 06:10:38 - src.writer - INFO - Saved cow video: VID_033_cow_0006.mp4 (duration: 5.13s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 936 - too short (1.27s)
+2025-12-28 06:10:38 - src.writer - DEBUG - Discarding track 937 - too short (1.00s)
+2025-12-28 06:10:38 - src.processor - INFO - Processing video: VID_034.mp4
+2025-12-28 06:10:38 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:18:06 - src.writer - INFO - Saved cow video: VID_034_cow_0001.mp4 (duration: 7.23s)
+2025-12-28 06:18:06 - src.writer - INFO - Saved cow video: VID_034_cow_0002.mp4 (duration: 8.40s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 944 - too short (0.03s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 947 - too short (1.80s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 950 - too short (1.20s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 949 - too short (2.57s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 951 - too short (0.03s)
+2025-12-28 06:18:06 - src.writer - INFO - Saved cow video: VID_034_cow_0003.mp4 (duration: 12.27s)
+2025-12-28 06:18:06 - src.writer - INFO - Saved cow video: VID_034_cow_0004.mp4 (duration: 7.40s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 955 - too short (0.03s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 960 - too short (2.10s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 961 - too short (0.10s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 963 - too short (1.00s)
+2025-12-28 06:18:06 - src.writer - DEBUG - Discarding track 965 - too short (0.07s)
+2025-12-28 06:18:06 - src.processor - INFO - Processing video: VID_035.mp4
+2025-12-28 06:18:06 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 966 - too short (2.33s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 969 - too short (0.13s)
+2025-12-28 06:31:48 - src.writer - INFO - Saved cow video: VID_035_cow_0001.mp4 (duration: 5.57s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 970 - too short (1.37s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 973 - too short (3.30s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 975 - too short (2.00s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 979 - too short (2.50s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 978 - too short (0.20s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 982 - too short (1.73s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 985 - too short (2.27s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 986 - too short (3.17s)
+2025-12-28 06:31:48 - src.writer - INFO - Saved cow video: VID_035_cow_0002.mp4 (duration: 16.57s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 991 - too short (1.50s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 996 - too short (1.70s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 997 - too short (2.27s)
+2025-12-28 06:31:48 - src.writer - INFO - Saved cow video: VID_035_cow_0003.mp4 (duration: 25.83s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1002 - too short (2.60s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1004 - too short (0.53s)
+2025-12-28 06:31:48 - src.writer - INFO - Saved cow video: VID_035_cow_0004.mp4 (duration: 4.43s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1007 - too short (2.87s)
+2025-12-28 06:31:48 - src.writer - INFO - Saved cow video: VID_035_cow_0005.mp4 (duration: 5.70s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1010 - too short (1.07s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1011 - too short (0.60s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1014 - too short (1.97s)
+2025-12-28 06:31:48 - src.writer - DEBUG - Discarding track 1015 - too short (1.20s)
+2025-12-28 06:31:48 - src.processor - INFO - Processing video: VID_036.mp4
+2025-12-28 06:31:48 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:39:39 - src.writer - INFO - Saved cow video: VID_036_cow_0001.mp4 (duration: 14.33s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1018 - too short (0.03s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1020 - too short (1.63s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1022 - too short (0.10s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1023 - too short (0.40s)
+2025-12-28 06:39:39 - src.writer - INFO - Saved cow video: VID_036_cow_0002.mp4 (duration: 21.47s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1029 - too short (0.43s)
+2025-12-28 06:39:39 - src.writer - INFO - Saved cow video: VID_036_cow_0003.mp4 (duration: 4.07s)
+2025-12-28 06:39:39 - src.writer - INFO - Saved cow video: VID_036_cow_0004.mp4 (duration: 6.67s)
+2025-12-28 06:39:39 - src.writer - DEBUG - Discarding track 1037 - too short (2.87s)
+2025-12-28 06:39:39 - src.processor - INFO - Processing video: VID_037.mp4
+2025-12-28 06:39:39 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:43:25 - src.writer - INFO - Saved cow video: VID_037_cow_0001.mp4 (duration: 4.70s)
+2025-12-28 06:43:25 - src.writer - INFO - Saved cow video: VID_037_cow_0002.mp4 (duration: 7.00s)
+2025-12-28 06:43:25 - src.writer - DEBUG - Discarding track 1042 - too short (3.67s)
+2025-12-28 06:43:25 - src.writer - DEBUG - Discarding track 1041 - too short (3.13s)
+2025-12-28 06:43:25 - src.writer - INFO - Saved cow video: VID_037_cow_0003.mp4 (duration: 5.03s)
+2025-12-28 06:43:25 - src.processor - INFO - Processing video: VID_038.mp4
+2025-12-28 06:43:25 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:46:13 - src.writer - INFO - Saved cow video: VID_038_cow_0001.mp4 (duration: 12.27s)
+2025-12-28 06:46:13 - src.writer - DEBUG - Discarding track 1045 - too short (0.17s)
+2025-12-28 06:46:13 - src.writer - DEBUG - Discarding track 1046 - too short (3.80s)
+2025-12-28 06:46:13 - src.writer - DEBUG - Discarding track 1048 - too short (2.33s)
+2025-12-28 06:46:13 - src.processor - INFO - Processing video: VID_039.mp4
+2025-12-28 06:46:13 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 06:52:43 - src.writer - INFO - Saved cow video: VID_039_cow_0001.mp4 (duration: 27.70s)
+2025-12-28 06:52:43 - src.writer - DEBUG - Discarding track 1051 - too short (1.57s)
+2025-12-28 06:52:43 - src.writer - DEBUG - Discarding track 1054 - too short (0.07s)
+2025-12-28 06:52:43 - src.writer - DEBUG - Discarding track 1055 - too short (3.03s)
+2025-12-28 06:52:43 - src.processor - INFO - Processing video: VID_040.mp4
+2025-12-28 06:52:43 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1058 - too short (0.03s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0001.mp4 (duration: 5.43s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0002.mp4 (duration: 11.93s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1064 - too short (0.63s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1066 - too short (0.20s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1070 - too short (0.20s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0003.mp4 (duration: 14.33s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0004.mp4 (duration: 5.00s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1073 - too short (3.17s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1074 - too short (2.57s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1075 - too short (0.70s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0005.mp4 (duration: 9.60s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1084 - too short (1.43s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1085 - too short (0.47s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1087 - too short (0.80s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1088 - too short (2.07s)
+2025-12-28 07:02:20 - src.writer - INFO - Saved cow video: VID_040_cow_0006.mp4 (duration: 4.23s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1090 - too short (0.57s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1094 - too short (0.33s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1099 - too short (0.13s)
+2025-12-28 07:02:20 - src.writer - DEBUG - Discarding track 1100 - too short (0.63s)
+2025-12-28 07:02:20 - src.processor - INFO - Processing video: VID_041.mp4
+2025-12-28 07:02:20 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 07:10:03 - src.writer - INFO - Saved cow video: VID_041_cow_0001.mp4 (duration: 15.80s)
+2025-12-28 07:10:03 - src.writer - DEBUG - Discarding track 1102 - too short (2.07s)
+2025-12-28 07:10:03 - src.writer - DEBUG - Discarding track 1104 - too short (0.53s)
+2025-12-28 07:10:03 - src.writer - DEBUG - Discarding track 1106 - too short (0.17s)
+2025-12-28 07:10:03 - src.writer - INFO - Saved cow video: VID_041_cow_0002.mp4 (duration: 19.27s)
+2025-12-28 07:10:03 - src.writer - DEBUG - Discarding track 1112 - too short (1.00s)
+2025-12-28 07:10:03 - src.writer - DEBUG - Discarding track 1118 - too short (0.17s)
+2025-12-28 07:10:03 - src.processor - INFO - Processing video: VID_042.mp4
+2025-12-28 07:10:03 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1119 - too short (1.80s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0001.mp4 (duration: 10.63s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1121 - too short (0.07s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0002.mp4 (duration: 11.27s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1124 - too short (0.83s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1127 - too short (1.37s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0003.mp4 (duration: 18.13s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1131 - too short (0.33s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1132 - too short (0.03s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0004.mp4 (duration: 6.33s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1134 - too short (2.33s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0005.mp4 (duration: 18.60s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1136 - too short (1.30s)
+2025-12-28 07:24:15 - src.writer - INFO - Saved cow video: VID_042_cow_0006.mp4 (duration: 8.17s)
+2025-12-28 07:24:15 - src.writer - DEBUG - Discarding track 1140 - too short (1.53s)
+2025-12-28 07:24:15 - src.processor - INFO - Processing video: VID_043.mp4
+2025-12-28 07:24:15 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 07:34:07 - src.writer - INFO - Saved cow video: VID_043_cow_0001.mp4 (duration: 21.03s)
+2025-12-28 07:34:07 - src.writer - DEBUG - Discarding track 1142 - too short (3.63s)
+2025-12-28 07:34:07 - src.writer - INFO - Saved cow video: VID_043_cow_0002.mp4 (duration: 7.10s)
+2025-12-28 07:34:07 - src.writer - INFO - Saved cow video: VID_043_cow_0003.mp4 (duration: 12.67s)
+2025-12-28 07:34:07 - src.writer - DEBUG - Discarding track 1148 - too short (1.27s)
+2025-12-28 07:34:07 - src.processor - INFO - Processing video: VID_044.mp4
+2025-12-28 07:34:07 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1149 - too short (2.57s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1150 - too short (0.03s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1154 - too short (1.67s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0001.mp4 (duration: 8.03s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1155 - too short (2.23s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1156 - too short (0.07s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1157 - too short (3.53s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1158 - too short (2.37s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0002.mp4 (duration: 5.13s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0003.mp4 (duration: 6.33s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0004.mp4 (duration: 10.33s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0005.mp4 (duration: 8.80s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1169 - too short (0.07s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0006.mp4 (duration: 4.50s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1173 - too short (3.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1174 - too short (3.27s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1175 - too short (2.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1176 - too short (1.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1177 - too short (2.77s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1178 - too short (2.50s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1179 - too short (1.60s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0007.mp4 (duration: 5.93s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1182 - too short (1.90s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1186 - too short (2.80s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1188 - too short (2.13s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1187 - too short (1.80s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1190 - too short (0.30s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1192 - too short (2.90s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1195 - too short (0.43s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1194 - too short (1.87s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1196 - too short (2.23s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1197 - too short (2.60s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1200 - too short (0.43s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1199 - too short (3.77s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1201 - too short (2.40s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1206 - too short (1.00s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1208 - too short (0.03s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1204 - too short (3.53s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1210 - too short (0.07s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0008.mp4 (duration: 4.67s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0009.mp4 (duration: 4.07s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1216 - too short (1.97s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1217 - too short (1.93s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0010.mp4 (duration: 4.07s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1221 - too short (0.53s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1220 - too short (0.87s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0011.mp4 (duration: 7.23s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1225 - too short (0.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1227 - too short (0.67s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1228 - too short (1.50s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1230 - too short (1.33s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1231 - too short (2.67s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1233 - too short (0.37s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1234 - too short (2.90s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1236 - too short (0.90s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1239 - too short (0.27s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0012.mp4 (duration: 4.70s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1242 - too short (1.00s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0013.mp4 (duration: 5.57s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1247 - too short (0.83s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1250 - too short (1.93s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1248 - too short (2.20s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1255 - too short (0.13s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1257 - too short (1.77s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1256 - too short (2.73s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1259 - too short (2.30s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0014.mp4 (duration: 9.47s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1260 - too short (0.27s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0015.mp4 (duration: 5.23s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1265 - too short (3.50s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1268 - too short (2.53s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1271 - too short (0.60s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1275 - too short (1.63s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1273 - too short (2.13s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1276 - too short (2.50s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0016.mp4 (duration: 4.57s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0017.mp4 (duration: 10.57s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1283 - too short (2.77s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1284 - too short (2.23s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1286 - too short (1.87s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0018.mp4 (duration: 10.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1289 - too short (0.70s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1293 - too short (0.70s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1295 - too short (0.03s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1296 - too short (1.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1298 - too short (0.10s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0019.mp4 (duration: 7.30s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1308 - too short (0.17s)
+2025-12-28 08:13:30 - src.writer - INFO - Saved cow video: VID_044_cow_0020.mp4 (duration: 9.70s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1311 - too short (0.10s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1312 - too short (0.60s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1316 - too short (0.47s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1317 - too short (0.53s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1322 - too short (0.47s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1323 - too short (1.93s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1325 - too short (0.90s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1326 - too short (0.07s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1329 - too short (0.87s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1330 - too short (1.30s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1337 - too short (0.17s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1338 - too short (0.13s)
+2025-12-28 08:13:30 - src.writer - DEBUG - Discarding track 1340 - too short (0.17s)
+2025-12-28 08:13:30 - src.processor - INFO - Processing video: VID_045.mp4
+2025-12-28 08:13:30 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1337 - too short (3.47s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1341 - too short (1.03s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1346 - too short (0.13s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0001.mp4 (duration: 22.03s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1348 - too short (2.83s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1349 - too short (0.37s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1351 - too short (0.40s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1353 - too short (1.33s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1354 - too short (1.83s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1357 - too short (3.17s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1358 - too short (2.57s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0002.mp4 (duration: 9.43s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0003.mp4 (duration: 10.97s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0004.mp4 (duration: 14.90s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1362 - too short (3.17s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1364 - too short (0.20s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0005.mp4 (duration: 4.47s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1371 - too short (0.63s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1372 - too short (0.87s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0006.mp4 (duration: 20.93s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0007.mp4 (duration: 26.23s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0008.mp4 (duration: 5.07s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1379 - too short (2.97s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1381 - too short (1.10s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1382 - too short (0.03s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1389 - too short (0.10s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0009.mp4 (duration: 7.90s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1394 - too short (0.43s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1395 - too short (3.53s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1397 - too short (1.20s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0010.mp4 (duration: 11.30s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1401 - too short (0.80s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1404 - too short (0.33s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1402 - too short (0.80s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1407 - too short (0.30s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1411 - too short (0.03s)
+2025-12-28 08:36:24 - src.writer - INFO - Saved cow video: VID_045_cow_0011.mp4 (duration: 4.67s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1414 - too short (0.20s)
+2025-12-28 08:36:24 - src.writer - DEBUG - Discarding track 1415 - too short (0.23s)
+2025-12-28 08:36:24 - src.processor - INFO - Processing video: VID_046.mp4
+2025-12-28 08:36:24 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0001.mp4 (duration: 21.77s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1419 - too short (1.80s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1420 - too short (0.23s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1422 - too short (2.07s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1424 - too short (1.80s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1426 - too short (1.20s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0002.mp4 (duration: 4.50s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1429 - too short (2.27s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1431 - too short (0.57s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0003.mp4 (duration: 25.83s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1433 - too short (0.37s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1434 - too short (0.43s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1438 - too short (0.37s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0004.mp4 (duration: 9.63s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1443 - too short (2.63s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1447 - too short (3.83s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1448 - too short (0.30s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0005.mp4 (duration: 16.60s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1453 - too short (1.67s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0006.mp4 (duration: 6.07s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0007.mp4 (duration: 13.40s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1465 - too short (0.37s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1467 - too short (0.77s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1468 - too short (0.07s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1470 - too short (0.23s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1473 - too short (2.20s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1474 - too short (2.50s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0008.mp4 (duration: 18.30s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1477 - too short (1.77s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1478 - too short (0.30s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1479 - too short (0.50s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1484 - too short (0.60s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1485 - too short (1.00s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0009.mp4 (duration: 4.43s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1488 - too short (1.53s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0010.mp4 (duration: 19.77s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1491 - too short (0.90s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1492 - too short (0.13s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0011.mp4 (duration: 4.70s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1496 - too short (3.43s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0012.mp4 (duration: 25.00s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1501 - too short (0.33s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1506 - too short (0.07s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1509 - too short (0.10s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0013.mp4 (duration: 5.33s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0014.mp4 (duration: 8.33s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1515 - too short (3.47s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1516 - too short (0.07s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1520 - too short (2.00s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0015.mp4 (duration: 6.10s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1528 - too short (1.83s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0016.mp4 (duration: 5.70s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1532 - too short (0.17s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1534 - too short (0.03s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0017.mp4 (duration: 10.80s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1539 - too short (0.50s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1542 - too short (0.30s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1548 - too short (3.47s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0018.mp4 (duration: 17.73s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1551 - too short (0.17s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1552 - too short (0.13s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1553 - too short (0.13s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1556 - too short (2.57s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1557 - too short (1.27s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1559 - too short (0.23s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1560 - too short (0.90s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1565 - too short (2.33s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1566 - too short (0.93s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1569 - too short (0.37s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0019.mp4 (duration: 5.63s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1572 - too short (1.47s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1574 - too short (0.17s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0020.mp4 (duration: 5.47s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1576 - too short (3.37s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1578 - too short (0.83s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1582 - too short (0.17s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0021.mp4 (duration: 10.97s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1591 - too short (1.10s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1596 - too short (0.67s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1599 - too short (0.70s)
+2025-12-28 09:27:20 - src.writer - INFO - Saved cow video: VID_046_cow_0022.mp4 (duration: 11.70s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1602 - too short (1.43s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1604 - too short (2.60s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1609 - too short (0.10s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1610 - too short (1.23s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1612 - too short (1.57s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1614 - too short (3.03s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1616 - too short (1.07s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1619 - too short (0.33s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1624 - too short (1.13s)
+2025-12-28 09:27:20 - src.writer - DEBUG - Discarding track 1626 - too short (0.07s)
+2025-12-28 09:27:20 - src.processor - INFO - Processing video: VID_047.mp4
+2025-12-28 09:27:20 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1629 - too short (0.17s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0001.mp4 (duration: 5.73s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1632 - too short (0.87s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1633 - too short (0.80s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1635 - too short (1.13s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1636 - too short (0.20s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0002.mp4 (duration: 13.73s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1640 - too short (0.20s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1641 - too short (1.07s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1643 - too short (0.20s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1647 - too short (0.17s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0003.mp4 (duration: 4.03s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1649 - too short (0.10s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0004.mp4 (duration: 4.30s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0005.mp4 (duration: 9.13s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1653 - too short (0.30s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1652 - too short (2.40s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1654 - too short (3.60s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1655 - too short (0.03s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1658 - too short (2.63s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1660 - too short (1.40s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1661 - too short (1.03s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0006.mp4 (duration: 13.50s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1666 - too short (2.77s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1671 - too short (2.23s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1678 - too short (2.00s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1680 - too short (0.57s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1684 - too short (0.17s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0007.mp4 (duration: 7.77s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1688 - too short (0.23s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1689 - too short (0.20s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1690 - too short (0.17s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1692 - too short (0.13s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1694 - too short (0.67s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1695 - too short (0.73s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0008.mp4 (duration: 12.77s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1697 - too short (0.10s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1698 - too short (0.13s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1699 - too short (2.97s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1701 - too short (1.63s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0009.mp4 (duration: 38.67s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1703 - too short (0.13s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1705 - too short (1.47s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1709 - too short (0.80s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1711 - too short (0.30s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1713 - too short (2.50s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0010.mp4 (duration: 11.00s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1717 - too short (0.30s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1724 - too short (1.93s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1723 - too short (1.60s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0011.mp4 (duration: 18.37s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1727 - too short (1.97s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1730 - too short (0.93s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1731 - too short (0.03s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1732 - too short (1.17s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1733 - too short (0.03s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1736 - too short (0.77s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1739 - too short (2.63s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1740 - too short (2.73s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1741 - too short (1.37s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1745 - too short (1.30s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0012.mp4 (duration: 5.97s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0013.mp4 (duration: 5.13s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0014.mp4 (duration: 4.60s)
+2025-12-28 10:00:36 - src.writer - INFO - Saved cow video: VID_047_cow_0015.mp4 (duration: 4.23s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1760 - too short (1.97s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1761 - too short (2.47s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1762 - too short (1.87s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1763 - too short (2.20s)
+2025-12-28 10:00:36 - src.writer - DEBUG - Discarding track 1765 - too short (1.17s)
+2025-12-28 10:00:36 - src.processor - INFO - Processing video: VID_048.mp4
+2025-12-28 10:00:36 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0001.mp4 (duration: 10.23s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1767 - too short (0.63s)
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0002.mp4 (duration: 19.43s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1769 - too short (3.53s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1770 - too short (0.97s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1771 - too short (0.60s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1774 - too short (0.47s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1775 - too short (2.07s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1778 - too short (0.67s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1780 - too short (0.40s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1782 - too short (0.23s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1785 - too short (0.77s)
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0003.mp4 (duration: 5.77s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1788 - too short (3.17s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1793 - too short (3.67s)
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0004.mp4 (duration: 5.23s)
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0005.mp4 (duration: 7.13s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1796 - too short (0.03s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1795 - too short (3.03s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1797 - too short (0.97s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1798 - too short (2.93s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1800 - too short (1.27s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1801 - too short (2.57s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1803 - too short (0.53s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1804 - too short (1.80s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1805 - too short (2.60s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1807 - too short (0.10s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1809 - too short (0.63s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1806 - too short (1.50s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1811 - too short (0.70s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1810 - too short (1.13s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1812 - too short (1.03s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1817 - too short (2.47s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1818 - too short (0.73s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1815 - too short (3.07s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1819 - too short (1.90s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1824 - too short (3.67s)
+2025-12-28 10:17:56 - src.writer - INFO - Saved cow video: VID_048_cow_0006.mp4 (duration: 9.67s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1827 - too short (2.90s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1829 - too short (3.07s)
+2025-12-28 10:17:56 - src.writer - DEBUG - Discarding track 1831 - too short (0.83s)
+2025-12-28 10:17:56 - src.processor - INFO - Processing video: VID_049.mp4
+2025-12-28 10:17:56 - src.processor - DEBUG - Video FPS: 30
+2025-12-28 10:21:32 - __main__ - WARNING - 
+Process interrupted by user

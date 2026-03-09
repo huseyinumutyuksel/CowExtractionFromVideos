@@ -7,17 +7,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Input settings
 # Can be overridden via environment variables or CLI arguments
 # Default: 'input_videos' folder in project root
-INPUT_VIDEOS_DIR = os.getenv('COW_INPUT_DIR', os.path.join(BASE_DIR, 'input_videos'))
-
+# INPUT_VIDEOS_DIR = os.getenv('COW_INPUT_DIR', os.path.join(BASE_DIR, 'input_videos'))
+INPUT_VIDEOS_DIR = r"C:\Users\Umut\Desktop\cow_videos"
 # Output settings
 # Extracted cow videos will be saved here
 # Default: 'output_cows' folder in project root
-OUTPUT_VIDEOS_DIR = os.getenv('COW_OUTPUT_DIR', os.path.join(BASE_DIR, 'output_cows'))
-
+#OUTPUT_VIDEOS_DIR = os.getenv('COW_OUTPUT_DIR', os.path.join(BASE_DIR, 'output_cows'))
+OUTPUT_VIDEOS_DIR = r"C:\Users\Umut\Desktop\cow_single_videos"
 # Single cow videos (identified by scanner) will be copied here
 # Default: 'single_cow_videos' folder in project root
-SINGLE_COW_VIDEOS_DIR = os.getenv('COW_SINGLE_DIR', os.path.join(BASE_DIR, 'single_cow_videos'))
-
+#SINGLE_COW_VIDEOS_DIR = os.getenv('COW_SINGLE_DIR', os.path.join(BASE_DIR, 'single_cow_videos'))
+SINGLE_COW_VIDEOS_DIR = r"C:\Users\Umut\Desktop\raw_single_cow_videos"
 # Smoothing settings
 SMOOTHING_ALPHA = 0.2  # Lower = smoother but more lag (0.0 to 1.0)
 

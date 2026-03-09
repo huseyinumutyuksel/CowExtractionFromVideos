@@ -10,7 +10,7 @@ from src.scanner import VideoScanner
 import glob
 import shutil
 
-<<<<<<< HEAD
+
 def select_background_color():
     """
     Asks the user to select a background color from a list of ML-friendly options.
@@ -18,7 +18,7 @@ def select_background_color():
     """
     colors = {
         "1": ("Yesil (Makine Ogrenmesi icin Onerilen)", (0, 255, 0)),
-        "2": ("Siyah (Varsayilan)", (0, 0, 0)),
+        "2": ("Siyah (Varsayilan)", (0, 255, 0)),
         "3": ("Beyaz", (255, 255, 255)),
         "4": ("Mavi (Chroma Key)", (255, 0, 0)),
         "5": ("Magenta (Yuksek Kontrast)", (255, 0, 255))
@@ -47,11 +47,11 @@ def main():
     # --- CHECK EXISTING OUTPUT ---
     processed_stems = set()
     should_delete = False
-=======
+
 def setup_logging(verbose=False, log_file=None):
     """
     Configure logging for the application.
->>>>>>> e9870a3794bf323aa2059c715c4b35e9b0fed43b
+
     
     Args:
         verbose: If True, set log level to DEBUG
